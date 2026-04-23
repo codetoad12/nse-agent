@@ -1,4 +1,80 @@
 {
-  "last_updated": "2026-04-24T00:21:06.750746+05:30",
-  "recommendations": {}
+  "last_updated": "2026-04-24T00:26:41.669303+05:30",
+  "recommendations": {
+    "RELIANCE.NS": {
+      "action": "WATCH",
+      "confidence": 0.45,
+      "ts": "2026-04-24T00:26:41.669303+05:30"
+    },
+    "TCS.NS": {
+      "action": "HOLD",
+      "confidence": 0.55,
+      "ts": "2026-04-24T00:26:41.669303+05:30"
+    },
+    "INFY.NS": {
+      "action": "WATCH",
+      "confidence": 0.45,
+      "ts": "2026-04-24T00:26:41.669303+05:30"
+    },
+    "HDFCBANK.NS": {
+      "action": "HOLD",
+      "confidence": 0.45,
+      "ts": "2026-04-24T00:26:41.669303+05:30"
+    },
+    "ICICIBANK.NS": {
+      "action": "HOLD",
+      "confidence": 0.55,
+      "ts": "2026-04-24T00:26:41.669303+05:30"
+    },
+    "HINDUNILVR.NS": {
+      "action": "HOLD",
+      "confidence": 0.45,
+      "ts": "2026-04-24T00:26:41.669303+05:30"
+    },
+    "ITC.NS": {
+      "action": "HOLD",
+      "confidence": 0.45,
+      "ts": "2026-04-24T00:26:41.669303+05:30"
+    },
+    "BAJFINANCE.NS": {
+      "action": "HOLD",
+      "confidence": 0.45,
+      "ts": "2026-04-24T00:26:41.669303+05:30"
+    },
+    "SBIN.NS": {
+      "action": "HOLD",
+      "confidence": 0.45,
+      "ts": "2026-04-24T00:26:41.669303+05:30"
+    },
+    "WIPRO.NS": {
+      "action": "HOLD",
+      "confidence": 0.45,
+      "ts": "2026-04-24T00:26:41.669303+05:30"
+    },
+    "AXISBANK.NS": {
+      "action": "WATCH",
+      "confidence": 0.55,
+      "ts": "2026-04-24T00:26:41.669303+05:30"
+    },
+    "KOTAKBANK.NS": {
+      "action": "HOLD",
+      "confidence": 0.45,
+      "ts": "2026-04-24T00:26:41.669303+05:30"
+    },
+    "MARUTI.NS": {
+      "action": "HOLD",
+      "confidence": 0.45,
+      "ts": "2026-04-24T00:26:41.669303+05:30"
+    },
+    "TITAN.NS": {
+      "action": "HOLD",
+      "confidence": 0.45,
+      "ts": "2026-04-24T00:26:41.669303+05:30"
+    },
+    "ULTRACEMCO.NS": {
+      "action": "HOLD",
+      "confidence": 0.45,
+      "ts": "2026-04-24T00:26:41.669303+05:30"
+    }
+  }
 }
