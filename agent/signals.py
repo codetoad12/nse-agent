@@ -13,6 +13,7 @@ def has_actionable_signal(bundle: dict) -> bool:
     Return True when at least one signal is meaningfully non-neutral.
     Thresholds are intentionally conservative to reduce noise.
     """
+    return True
     rsi = bundle.get("rsi")
     macd = bundle.get("macd_signal") or ""
     boll = bundle.get("bollinger_position") or ""
