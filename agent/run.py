@@ -84,6 +84,7 @@ def main():
         # 1. Fetch
         try:
             bundle = fetch_signals(symbol)
+            logger.info(f"{symbol}: RSI={bundle.get('rsi')}, MACD={bundle.get('macd_signal')}, BB={bundle.get('bollinger_position')}")
         except Exception as e:
             logger.error(f"{symbol}: fetch crashed — {e}")
             continue
