@@ -66,9 +66,9 @@ def append_log(entry: dict):
 # ── Main ─────────────────────────────────────────────────────────────────────
 
 def main():
-    # if not is_market_open():
-    #     logger.info("Market is closed — nothing to do.")
-    #     sys.exit(0)
+    if not is_market_open():
+        logger.info("Market is closed — nothing to do.")
+        sys.exit(0)
 
     state     = load_state()
     watchlist = json.loads(WATCHLIST.read_text())["symbols"]
