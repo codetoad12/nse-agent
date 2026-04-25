@@ -118,11 +118,10 @@ def _compute_technicals(obb, hist_obj, hist_df, bundle: dict):
             data=hist_df, target="close", fast=12, slow=26, signal=9
         ).to_dataframe()
         logger.info(f"MACD columns: {list(macd_df.columns)}")
-        macd_now  = _col(macd_df,  "macd", "MACD")
-        sig_now   = _col(macd_df,  "macd_signal", "MACDs_9", "signal")
-        macd_prev = _prev_col(macd_df, "macd", "MACD")
-        sig_prev  = _prev_col(macd_df, "macd_signal", "MACDs_9", "signal")
-
+        macd_now  = _col(macd_df,  "close_MACD_12_26_9")
+        sig_now   = _col(macd_df,  "close_MACDs_12_26_9")
+        macd_prev = _prev_col(macd_df, "close_MACD_12_26_9")
+        sig_prev  = _prev_col(macd_df, "close_MACDs_12_26_9")
         if None not in (macd_now, sig_now, macd_prev, sig_prev):
             if macd_prev < sig_prev and macd_now > sig_now:
                 bundle["macd_signal"] = "bullish_crossover"
@@ -142,8 +141,9 @@ def _compute_technicals(obb, hist_obj, hist_df, bundle: dict):
         ).to_dataframe()
         logger.info(f"BB columns: {list(bb_df.columns)}")
 
-        upper = _col(bb_df, "bbands_upper", "upper_band", "BBU_20_2.0", "Upper")
-        lower = _col(bb_df, "bbands_lower", "lower_band", "BBL_20_2.0", "Lower")
+        upper = _col(bb_df, "close_BBU_20_2.0")
+        lower = _col(bb_df, "close_BBL_20_2.0")
+
         price = bundle["price"] or float(hist_df["close"].iloc[-1])
 
         if None not in (upper, lower) and upper != lower:
