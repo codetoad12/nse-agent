@@ -37,8 +37,8 @@ WATCHLIST    = Path("watchlist.json")
 def is_market_open() -> bool:
     """NSE regular hours: 09:15 – 15:30 IST, Mon–Fri."""
     now = datetime.now(IST)
-    # if now.weekday() > 4:  # Saturday / Sunday
-    #     return False
+    if now.weekday() > 4:  # Saturday / Sunday
+        return False
     open_t  = now.replace(hour=9,  minute=15, second=0, microsecond=0)
     close_t = now.replace(hour=15, minute=30, second=0, microsecond=0)
     return open_t <= now <= close_t
