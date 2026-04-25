@@ -105,7 +105,7 @@ def _compute_technicals(obb, hist_obj, hist_df, bundle: dict):
     logger.info(f"hist columns: {list(hist_df.columns)}")
     try:
         rsi_df = obb.technical.rsi(
-            data=hist_obj, target="close", length=14
+            data=hist_df, target="close", length=14
         ).to_dataframe()
         logger.info(f"RSI columns: {list(rsi_df.columns)}")
         bundle["rsi"] = _col(rsi_df, "rsi", "RSI_14", "RSI")
@@ -115,7 +115,7 @@ def _compute_technicals(obb, hist_obj, hist_df, bundle: dict):
     # MACD ────────────────────────────────────────────────────────────────────
     try:
         macd_df = obb.technical.macd(
-            data=hist_obj, target="close", fast=12, slow=26, signal=9
+            data=hist_df, target="close", fast=12, slow=26, signal=9
         ).to_dataframe()
 
         macd_now  = _col(macd_df,  "macd", "MACD")
@@ -138,7 +138,7 @@ def _compute_technicals(obb, hist_obj, hist_df, bundle: dict):
     # Bollinger Bands ─────────────────────────────────────────────────────────
     try:
         bb_df = obb.technical.bbands(
-            data=hist_obj, target="close", length=20, std=2.0
+            data=hist_df, target="close", length=20, std=2.0
         ).to_dataframe()
 
         upper = _col(bb_df, "bbands_upper", "upper_band", "BBU_20_2.0", "Upper")
