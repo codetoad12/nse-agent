@@ -102,6 +102,7 @@ def _compute_technicals(obb, hist_obj, hist_df, bundle: dict):
     """Compute RSI, MACD, and Bollinger Band position from historical data."""
 
     # RSI ─────────────────────────────────────────────────────────────────────
+    logger.info(f"hist columns: {list(hist_df.columns)}")
     try:
         rsi_df = obb.technical.rsi(
             data=hist_obj.results, target="close", length=14
