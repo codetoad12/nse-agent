@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-05-01T11:40:11.039451+05:30",
+  "last_updated": "2026-05-01T13:54:56.315757+05:30",
   "recommendations": {
     "RELIANCE.NS": {
       "action": "HOLD",
-      "confidence": 0.58,
-      "ts": "2026-05-01T11:40:11.039451+05:30"
+      "confidence": 0.62,
+      "ts": "2026-05-01T13:54:56.315757+05:30"
     },
     "TCS.NS": {
       "action": "HOLD",
