@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-05-04T11:28:04.379059+05:30",
+  "last_updated": "2026-05-04T14:00:26.444653+05:30",
   "recommendations": {
     "RELIANCE.NS": {
       "action": "HOLD",
-      "confidence": 0.62,
-      "ts": "2026-05-04T11:28:04.379059+05:30"
+      "confidence": 0.55,
+      "ts": "2026-05-04T14:00:26.444653+05:30"
     },
     "TCS.NS": {
       "action": "HOLD",
@@ -12,9 +12,9 @@
       "ts": "2026-04-28T13:42:53.557068+05:30"
     },
     "INFY.NS": {
-      "action": "HOLD",
+      "action": "WATCH",
       "confidence": 0.55,
-      "ts": "2026-05-04T11:28:04.379059+05:30"
+      "ts": "2026-05-04T14:00:26.444653+05:30"
     },
     "HDFCBANK.NS": {
       "action": "HOLD",
