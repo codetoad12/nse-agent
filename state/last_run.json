@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-06T13:43:25.073395+05:30",
+  "last_updated": "2026-05-07T11:25:54.080295+05:30",
   "recommendations": {
     "RELIANCE.NS": {
       "action": "HOLD",
@@ -13,8 +13,8 @@
     },
     "INFY.NS": {
       "action": "WATCH",
-      "confidence": 0.58,
-      "ts": "2026-05-06T13:43:25.073395+05:30"
+      "confidence": 0.55,
+      "ts": "2026-05-07T11:25:54.080295+05:30"
     },
     "HDFCBANK.NS": {
       "action": "HOLD",
@@ -68,8 +68,8 @@
     },
     "TITAN.NS": {
       "action": "HOLD",
-      "confidence": 0.55,
-      "ts": "2026-05-06T13:43:25.073395+05:30"
+      "confidence": 0.58,
+      "ts": "2026-05-07T11:25:54.080295+05:30"
     },
     "ULTRACEMCO.NS": {
       "action": "HOLD",
