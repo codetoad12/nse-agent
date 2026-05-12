@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-11T12:02:28.085237+05:30",
+  "last_updated": "2026-05-12T11:38:39.026521+05:30",
   "recommendations": {
     "RELIANCE.NS": {
       "action": "HOLD",
@@ -7,19 +7,19 @@
       "ts": "2026-05-05T15:02:04.554142+05:30"
     },
     "TCS.NS": {
-      "action": "HOLD",
-      "confidence": 0.58,
-      "ts": "2026-04-28T13:42:53.557068+05:30"
+      "action": "WATCH",
+      "confidence": 0.55,
+      "ts": "2026-05-12T11:38:39.026521+05:30"
     },
     "INFY.NS": {
       "action": "WATCH",
       "confidence": 0.55,
-      "ts": "2026-05-07T11:25:54.080295+05:30"
+      "ts": "2026-05-12T11:38:39.026521+05:30"
     },
     "HDFCBANK.NS": {
       "action": "HOLD",
-      "confidence": 0.45,
-      "ts": "2026-04-24T10:59:11.814677+05:30"
+      "confidence": 0.55,
+      "ts": "2026-05-12T11:38:39.026521+05:30"
     },
     "ICICIBANK.NS": {
       "action": "HOLD",
@@ -38,18 +38,18 @@
     },
     "BAJFINANCE.NS": {
       "action": "HOLD",
-      "confidence": 0.55,
-      "ts": "2026-05-07T13:53:54.594649+05:30"
+      "confidence": 0.58,
+      "ts": "2026-05-12T11:38:39.026521+05:30"
     },
     "SBIN.NS": {
       "action": "WATCH",
       "confidence": 0.55,
-      "ts": "2026-05-11T12:02:28.085237+05:30"
+      "ts": "2026-05-12T11:38:39.026521+05:30"
     },
     "WIPRO.NS": {
-      "action": "HOLD",
-      "confidence": 0.62,
-      "ts": "2026-04-30T11:23:01.440109+05:30"
+      "action": "WATCH",
+      "confidence": 0.55,
+      "ts": "2026-05-12T11:38:39.026521+05:30"
     },
     "AXISBANK.NS": {
       "action": "HOLD",
@@ -69,7 +69,7 @@
     "TITAN.NS": {
       "action": "HOLD",
       "confidence": 0.55,
-      "ts": "2026-05-11T12:02:28.085237+05:30"
+      "ts": "2026-05-12T11:38:39.026521+05:30"
     },
     "ULTRACEMCO.NS": {
       "action": "HOLD",
