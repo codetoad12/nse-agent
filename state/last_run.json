@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-15T14:58:49.227823+05:30",
+  "last_updated": "2026-05-18T12:20:39.009258+05:30",
   "recommendations": {
     "RELIANCE.NS": {
       "action": "HOLD",
@@ -7,9 +7,9 @@
       "ts": "2026-05-12T14:42:21.398763+05:30"
     },
     "TCS.NS": {
-      "action": "WATCH",
+      "action": "HOLD",
       "confidence": 0.55,
-      "ts": "2026-05-15T14:58:49.227823+05:30"
+      "ts": "2026-05-18T12:20:39.009258+05:30"
     },
     "INFY.NS": {
       "action": "WATCH",
@@ -43,8 +43,8 @@
     },
     "SBIN.NS": {
       "action": "WATCH",
-      "confidence": 0.58,
-      "ts": "2026-05-15T14:58:49.227823+05:30"
+      "confidence": 0.55,
+      "ts": "2026-05-18T12:20:39.009258+05:30"
     },
     "WIPRO.NS": {
       "action": "WATCH",
