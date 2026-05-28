@@ -45,6 +45,27 @@ def format_alert(rec: dict, prev_action: str | None = None) -> str:
     return "\n".join(l for l in lines if l is not None)
 
 
+_MAX_TG = 4096
+
+
+def _split_message(text: str) -> list[str]:
+    """Split text into ≤4096-char chunks, breaking at blank lines."""
+    if len(text) <= _MAX_TG:
+        return [text]
+    chunks, current = [], []
+    current_len = 0
+    for para in text.split("\n\n"):
+        block = para + "\n\n"
+        if current_len + len(block) > _MAX_TG and current:
+            chunks.append("\n\n".join(current).rstrip())
+            current, current_len = [], 0
+        current.append(para)
+        current_len += len(block)
+    if current:
+        chunks.append("\n\n".join(current).rstrip())
+    return chunks
+
+
 def send_telegram(text: str):
     token   = os.environ.get("TELEGRAM_BOT_TOKEN")
     chat_id = os.environ.get("TELEGRAM_CHAT_ID")
@@ -53,16 +74,18 @@ def send_telegram(text: str):
         logger.info(f"[Telegram not configured] {text}")
         return
 
-    try:
-        resp = requests.post(
-            TELEGRAM_URL.format(token=token),
-            json={"chat_id": chat_id, "text": text},
-            timeout=10,
-        )
-        resp.raise_for_status()
-        logger.info("Telegram alert sent.")
-    except Exception as e:
-        logger.error(f"Telegram send failed: {e}")
+    for chunk in _split_message(text):
+        try:
+            resp = requests.post(
+                TELEGRAM_URL.format(token=token),
+                json={"chat_id": chat_id, "text": chunk},
+                timeout=10,
+            )
+            resp.raise_for_status()
+        except Exception as e:
+            logger.error(f"Telegram send failed: {e}")
+            return
+    logger.info("Telegram alert sent.")
 
 
 def format_weekly_digest(recommendations: list, date_str: str) -> str:
