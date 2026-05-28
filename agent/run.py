@@ -17,7 +17,7 @@ import pytz
 from agent.alert import format_alert, send_telegram, should_alert
 from agent.analyze import analyze
 from agent.fetch import fetch_signals
-from agent.signals import has_actionable_signal
+from agent.signals import has_actionable_signal, propose_action_short
 
 logging.basicConfig(
     level=logging.INFO,
@@ -98,16 +98,21 @@ def main():
             skipped.append(symbol)
             continue
 
+        # 2.5 Propose action from signal rules
+        proposed_action = propose_action_short(bundle)
+
         # 3. LLM analysis
         try:
-            rec = analyze(bundle)
+            rec = analyze(bundle, proposed_action)
         except Exception as e:
             logger.error(f"{symbol}: LLM failed — {e}")
             continue
 
         logger.info(
             f"{symbol}: {rec['action']} "
-            f"(conf={rec['confidence']:.0%}  RSI={rec.get('rsi') or 'n/a'})"
+            f"(conf={rec['confidence']:.0%}  RSI={rec.get('rsi') or 'n/a'}"
+            f"  proposed={proposed_action}"
+            f"{'  OVERRIDE' if rec.get('override') else ''})"
         )
 
         # 4. Alert
@@ -122,9 +127,11 @@ def main():
         # 5. Log (always) + update state
         append_log({"cycle_ts": now_ist, **rec})
         state["recommendations"][symbol] = {
-            "action":     rec["action"],
-            "confidence": rec["confidence"],
-            "ts":         now_ist,
+            "action":          rec["action"],
+            "confidence":      rec["confidence"],
+            "proposed_action": rec.get("proposed_action"),
+            "override":        rec.get("override", False),
+            "ts":              now_ist,
         }
 
     # 6. Persist state
