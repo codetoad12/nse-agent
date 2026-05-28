@@ -66,7 +66,7 @@ def send_telegram(text: str):
 
 
 def format_weekly_digest(recommendations: list, date_str: str) -> str:
-    by_action = {"BUY": [], "SELL": [], "WATCH": [], "HOLD": []}
+    by_action: dict = {}
     overrides = []
 
     for rec in recommendations:
@@ -75,41 +75,46 @@ def format_weekly_digest(recommendations: list, date_str: str) -> str:
         if rec.get("override"):
             overrides.append(rec)
 
-    action_emoji = {"BUY": "🟢 BUY", "SELL": "🔴 SELL", "WATCH": "🔵 WATCH", "HOLD": "🟡 HOLD"}
+    action_label = {"BUY": "🟢 BUY", "SELL": "🔴 SELL", "WATCH": "🔵 WATCH", "HOLD": "🟡 HOLD"}
     lines = [f"📊 Weekly Long-Term Review — {date_str}", ""]
 
     for action in ["BUY", "SELL", "WATCH", "HOLD"]:
         stocks = by_action.get(action, [])
         if not stocks:
             continue
-        lines.append(action_emoji[action])
+        lines.append(action_label[action])
         for rec in stocks:
             symbol = rec["symbol"].replace(".NS", "").replace(".BO", "")
             conf = rec.get("confidence", 0)
             val  = rec.get("valuation", "")
-            thesis = (rec.get("thesis") or "")[:80]
+            thesis = rec.get("thesis") or ""
             val_str = f" | {val.capitalize()}" if val and val != "unavailable" else ""
-            lines.append(f"  {symbol} — {conf:.0%}{val_str} | {thesis}")
+            lines.append(f"  {symbol} — {conf:.0%}{val_str}")
+            if thesis:
+                lines.append(f"  {thesis}")
         lines.append("")
 
     if overrides:
         lines.append(f"⚠️ Overrides this week: {len(overrides)}")
         for rec in overrides:
             symbol = rec["symbol"].replace(".NS", "").replace(".BO", "")
-            reason = (rec.get("override_reason") or "")[:80]
+            reason = rec.get("override_reason") or ""
             lines.append(f"  {symbol}: {reason}")
     else:
         lines.append("⚠️ Overrides this week: none")
 
-    all_risks = []
-    for rec in recommendations:
+    # Top risk per BUY/WATCH symbol only — actionable ones
+    actionable = [r for r in recommendations if r.get("action") in ("BUY", "SELL", "WATCH")]
+    top_risks = []
+    for rec in actionable:
         risks = rec.get("risks") or []
         if risks:
             symbol = rec["symbol"].replace(".NS", "").replace(".BO", "")
-            all_risks.append(f"{symbol}: {risks[0][:40]}")
+            top_risks.append(f"• {symbol}: {risks[0]}")
 
-    if all_risks:
+    if top_risks:
         lines.append("")
-        lines.append("Risks: " + " | ".join(all_risks[:3]))
+        lines.append("Key risks:")
+        lines.extend(top_risks)
 
     return "\n".join(l for l in lines if l is not None)
