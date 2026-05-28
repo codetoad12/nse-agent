@@ -1,23 +1,34 @@
 """
-Fetch long-term fundamental signals for a given NSE/BSE symbol via OpenBB.
-Uses a 2-year price history window. RSI/MACD/Bollinger are excluded.
+Fetch long-term fundamental signals for a given NSE/BSE symbol via yfinance.
+Uses a 2-year price history window for SMA computation. RSI/MACD/Bollinger excluded.
+
+yfinance unit conventions (applied here so callers see consistent units):
+  debtToEquity   → percentage (36.65 = 0.37x) — divided by 100 before storing
+  returnOnEquity → decimal (0.15 = 15%)       — multiplied by 100 before storing
+  earningsGrowth → decimal (0.18 = 18%)       — multiplied by 100 before storing
+  revenueGrowth  → decimal (0.08 = 8%)        — multiplied by 100 before storing
+  dividendYield  → decimal (0.01 = 1%)        — multiplied by 100 before storing
 """
 import logging
-from datetime import datetime, timedelta
+from datetime import datetime
+
+import yfinance as yf
 
 logger = logging.getLogger(__name__)
 
 
-def _col(df, *candidates):
-    for col in candidates:
-        if col in df.columns and not df[col].isna().all():
-            return float(df[col].iloc[-1])
-    return None
+def _safe(val):
+    """Return float or None; filters out NaN and inf."""
+    try:
+        f = float(val)
+        if f != f or abs(f) == float("inf"):
+            return None
+        return f
+    except (TypeError, ValueError):
+        return None
 
 
 def fetch_signals_lt(symbol: str) -> dict:
-    from openbb import obb
-
     bundle = {
         "symbol": symbol,
         "timestamp": datetime.utcnow().isoformat(),
@@ -35,91 +46,58 @@ def fetch_signals_lt(symbol: str) -> dict:
         "errors": [],
     }
 
-    # ── 1. Live quote ────────────────────────────────────────────────────────
     try:
-        q = obb.equity.price.quote(symbol, provider="yfinance").to_dataframe()
-        bundle["price"] = _col(q, "last_price", "price", "close")
+        ticker = yf.Ticker(symbol)
     except Exception as e:
-        bundle["errors"].append(f"quote:{e}")
+        bundle["errors"].append(f"ticker_init:{e}")
+        return bundle
+
+    # ── 1. Fundamentals from ticker.info ─────────────────────────────────────
+    try:
+        info = ticker.info or {}
+
+        bundle["price"]      = _safe(info.get("currentPrice") or info.get("regularMarketPrice"))
+        bundle["pe_ratio"]   = _safe(info.get("trailingPE"))
+        bundle["market_cap"] = _safe(info.get("marketCap"))
+        bundle["sector"]     = info.get("sector")
+
+        roe = _safe(info.get("returnOnEquity"))
+        if roe is not None:
+            bundle["roe"] = roe * 100  # decimal → percentage
+
+        dte = _safe(info.get("debtToEquity"))
+        if dte is not None:
+            bundle["debt_to_equity"] = dte / 100  # percentage → ratio
+
+        eg = _safe(info.get("earningsGrowth"))
+        if eg is not None:
+            bundle["eps_growth"] = eg * 100  # decimal → percentage
+
+        rg = _safe(info.get("revenueGrowth"))
+        if rg is not None:
+            bundle["revenue_growth"] = rg * 100  # decimal → percentage
+
+        dy = _safe(info.get("trailingAnnualDividendYield"))
+        if dy is not None:
+            bundle["dividend_yield"] = dy * 100  # decimal → percentage
+
+    except Exception as e:
+        bundle["errors"].append(f"info:{e}")
 
     # ── 2. 2-year price history + SMAs ───────────────────────────────────────
     try:
-        end   = datetime.utcnow().strftime("%Y-%m-%d")
-        start = (datetime.utcnow() - timedelta(days=730)).strftime("%Y-%m-%d")
-        hist  = obb.equity.price.historical(
-            symbol, start_date=start, end_date=end, provider="yfinance"
-        )
-        hist_df = hist.to_dataframe()
-
-        if bundle["price"] is None and not hist_df.empty:
-            bundle["price"] = float(hist_df["close"].iloc[-1])
-
-        if len(hist_df) >= 50:
-            sma50_df = obb.technical.sma(
-                data=hist_df, target="close", length=50
-            ).to_dataframe()
-            bundle["sma_50"] = _col(sma50_df, "close_SMA_50")
-
-        if len(hist_df) >= 200:
-            sma200_df = obb.technical.sma(
-                data=hist_df, target="close", length=200
-            ).to_dataframe()
-            bundle["sma_200"] = _col(sma200_df, "close_SMA_200")
-
+        hist = ticker.history(period="2y")
+        if hist.empty:
+            bundle["errors"].append("history:empty_dataframe")
+        else:
+            close = hist["Close"]
+            if bundle["price"] is None and not close.empty:
+                bundle["price"] = _safe(close.iloc[-1])
+            if len(close) >= 50:
+                bundle["sma_50"] = _safe(close.rolling(50).mean().iloc[-1])
+            if len(close) >= 200:
+                bundle["sma_200"] = _safe(close.rolling(200).mean().iloc[-1])
     except Exception as e:
         bundle["errors"].append(f"history:{e}")
-
-    # ── 3. Profile (P/E, sector, market cap) ────────────────────────────────
-    try:
-        prof = obb.equity.profile(symbol, provider="yfinance").to_dataframe()
-        if not prof.empty:
-            bundle["sector"]     = prof.get("sector", [None])[0]
-            bundle["market_cap"] = _col(prof, "market_cap", "marketCap")
-            bundle["pe_ratio"]   = _col(prof, "pe_ratio", "trailingPE", "pe")
-    except Exception as e:
-        bundle["errors"].append(f"profile:{e}")
-
-    # ── 4. Fundamental metrics (ROE, debt-to-equity) ────────────────────────
-    try:
-        metrics = obb.equity.fundamental.metrics(
-            symbol, provider="yfinance"
-        ).to_dataframe()
-        if not metrics.empty:
-            bundle["roe"]            = _col(metrics, "roe", "returnOnEquity")
-            bundle["debt_to_equity"] = _col(metrics, "debt_to_equity", "debtToEquity")
-    except Exception as e:
-        bundle["errors"].append(f"metrics:{e}")
-
-    # ── 5. Income statement (EPS + revenue growth) ──────────────────────────
-    try:
-        income = obb.equity.fundamental.income(
-            symbol, provider="yfinance", limit=2
-        ).to_dataframe()
-        if not income.empty and income.index.dtype != object:
-            income = income.sort_index(ascending=False)
-        if len(income) >= 2:
-            eps_now  = _col(income.iloc[[0]], "eps", "basicEPS", "dilutedEPS")
-            eps_prev = _col(income.iloc[[1]], "eps", "basicEPS", "dilutedEPS")
-            rev_now  = _col(income.iloc[[0]], "revenue", "totalRevenue")
-            rev_prev = _col(income.iloc[[1]], "revenue", "totalRevenue")
-            if eps_now is not None and eps_prev is not None and eps_prev != 0:
-                bundle["eps_growth"] = ((eps_now - eps_prev) / abs(eps_prev)) * 100
-            if rev_now is not None and rev_prev is not None and rev_prev != 0:
-                bundle["revenue_growth"] = ((rev_now - rev_prev) / abs(rev_prev)) * 100
-    except Exception as e:
-        bundle["errors"].append(f"income:{e}")
-
-    # ── 6. Dividend yield ────────────────────────────────────────────────────
-    try:
-        divs = obb.equity.fundamental.dividends(
-            symbol, provider="yfinance"
-        ).to_dataframe()
-        if not divs.empty and bundle["price"]:
-            div_col = next((c for c in ["amount", "dividend", "value"] if c in divs.columns), None)
-            if div_col:
-                annual_div = float(divs[div_col].dropna().head(4).sum())
-                bundle["dividend_yield"] = (annual_div / bundle["price"]) * 100
-    except Exception as e:
-        bundle["errors"].append(f"dividends:{e}")
 
     return bundle
