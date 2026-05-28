@@ -71,7 +71,7 @@ def rsi_label(v) -> str:
 
 # ── Format bundle as structured text for the LLM prompt ─────────────────────
 
-def format_for_llm(bundle: dict, proposed_action: str) -> str:
+def format_for_llm(bundle: dict, proposed_action: str = "PENDING") -> str:
     symbol   = bundle["symbol"].replace(".NS", "").replace(".BO", "")
     price    = bundle.get("price")
     chg      = bundle.get("change_pct")
