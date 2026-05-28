@@ -15,5 +15,15 @@
     "MARUTI.NS",
     "TITAN.NS",
     "ULTRACEMCO.NS"
+  ],
+  "long_term_symbols": [
+    "RELIANCE.NS",
+    "TCS.NS",
+    "HDFCBANK.NS",
+    "ICICIBANK.NS",
+    "SBIN.NS",
+    "MARUTI.NS",
+    "TITAN.NS",
+    "BAJFINANCE.NS"
   ]
 }
