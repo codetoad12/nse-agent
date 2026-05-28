@@ -5,6 +5,7 @@ Uses fundamentals-driven system prompt. Same model as short-term for cost parity
 import json
 import logging
 import os
+import re
 
 import anthropic
 
@@ -50,23 +51,21 @@ def analyze_lt(bundle: dict, proposed_action: str) -> dict:
 
     msg = client.messages.create(
         model="claude-haiku-4-5-20251001",
-        max_tokens=600,
+        max_tokens=800,
         system=SYSTEM_PROMPT,
         messages=[{"role": "user", "content": signal_text}],
     )
 
     raw = msg.content[0].text.strip()
-    # Strip markdown fences in any form: ```json ... ``` or ``` ... ```
-    if raw.startswith("```"):
-        raw = raw.lstrip("`")
-        if raw.startswith("json"):
-            raw = raw[4:]
-        raw = raw.strip().rstrip("`").rstrip()
+    # Extract the first {...} JSON object, tolerating any surrounding markdown
+    match = re.search(r"\{[\s\S]*\}", raw)
+    if match:
+        raw = match.group(0)
 
     try:
         rec = json.loads(raw)
     except json.JSONDecodeError:
-        logger.warning(f"LLM returned non-JSON for {bundle['symbol']}: {raw[:200]}")
+        logger.warning(f"LLM returned non-JSON for {bundle['symbol']}: {raw[:300]}")
         rec = {
             "action": "WATCH",
             "confidence": 0.3,
