@@ -24,6 +24,39 @@ def has_actionable_signal(bundle: dict) -> bool:
     return rsi_triggered or macd_triggered or boll_triggered
 
 
+# ── Propose action deterministically ─────────────────────────────────────────
+
+def propose_action_short(bundle: dict) -> str:
+    """
+    Determine a proposed trade action based on signal confluence.
+    Returns one of: "BUY", "SELL", "WATCH", "HOLD"
+
+    Rules:
+    - BUY: RSI oversold (<35) AND (MACD bullish crossover OR Bollinger oversold)
+    - SELL: RSI overbought (>65) AND (MACD bearish crossover OR Bollinger overbought)
+    - WATCH: Any single signal fires (RSI extreme, crossover, or Bollinger extreme)
+    - HOLD: No signals or weak mix
+    """
+    rsi = bundle.get("rsi")
+    macd = bundle.get("macd_signal") or ""
+    boll = bundle.get("bollinger_position") or ""
+
+    rsi_oversold   = rsi is not None and rsi < 35
+    rsi_overbought = rsi is not None and rsi > 65
+    macd_bullish   = "bullish_crossover" in macd
+    macd_bearish   = "bearish_crossover" in macd
+    boll_oversold  = boll == "oversold"
+    boll_overbought = boll == "overbought"
+
+    if rsi_oversold and (macd_bullish or boll_oversold):
+        return "BUY"
+    if rsi_overbought and (macd_bearish or boll_overbought):
+        return "SELL"
+    if rsi_oversold or macd_bullish or boll_oversold or rsi_overbought or macd_bearish or boll_overbought:
+        return "WATCH"
+    return "HOLD"
+
+
 # ── Human-readable RSI label ─────────────────────────────────────────────────
 
 def rsi_label(v) -> str:
@@ -38,7 +71,7 @@ def rsi_label(v) -> str:
 
 # ── Format bundle as structured text for the LLM prompt ─────────────────────
 
-def format_for_llm(bundle: dict) -> str:
+def format_for_llm(bundle: dict, proposed_action: str) -> str:
     symbol   = bundle["symbol"].replace(".NS", "").replace(".BO", "")
     price    = bundle.get("price")
     chg      = bundle.get("change_pct")
@@ -59,6 +92,7 @@ def format_for_llm(bundle: dict) -> str:
             mcap_str = f"₹{mcap/1e6:.0f}M"
 
     lines = [
+        f"PROPOSED ACTION: {proposed_action}",
         f"SYMBOL: {symbol}",
         f"Price: {price_str}",
         f"RSI (14): {rsi_label(bundle.get('rsi'))}",
