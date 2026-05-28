@@ -48,7 +48,10 @@ def append_log(entry: dict):
 
 def main():
     wl      = json.loads(WATCHLIST_PATH.read_text())
-    symbols = wl.get("long_term_symbols") or wl["symbols"]
+    symbols = wl.get("long_term_symbols") or wl.get("symbols") or []
+    if not symbols:
+        logger.error("No symbols found in watchlist.json — aborting")
+        sys.exit(1)
     state   = load_state()
     now_ist = datetime.now(IST).isoformat()
     date_str = datetime.now(IST).strftime("%d %b %Y").lstrip("0")

@@ -95,14 +95,16 @@ def fetch_signals_lt(symbol: str) -> dict:
         income = obb.equity.fundamental.income(
             symbol, provider="yfinance", limit=2
         ).to_dataframe()
+        if not income.empty and income.index.dtype != object:
+            income = income.sort_index(ascending=False)
         if len(income) >= 2:
             eps_now  = _col(income.iloc[[0]], "eps", "basicEPS", "dilutedEPS")
             eps_prev = _col(income.iloc[[1]], "eps", "basicEPS", "dilutedEPS")
             rev_now  = _col(income.iloc[[0]], "revenue", "totalRevenue")
             rev_prev = _col(income.iloc[[1]], "revenue", "totalRevenue")
-            if eps_now and eps_prev and eps_prev != 0:
+            if eps_now is not None and eps_prev is not None and eps_prev != 0:
                 bundle["eps_growth"] = ((eps_now - eps_prev) / abs(eps_prev)) * 100
-            if rev_now and rev_prev and rev_prev != 0:
+            if rev_now is not None and rev_prev is not None and rev_prev != 0:
                 bundle["revenue_growth"] = ((rev_now - rev_prev) / abs(rev_prev)) * 100
     except Exception as e:
         bundle["errors"].append(f"income:{e}")

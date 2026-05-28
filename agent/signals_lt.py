@@ -72,7 +72,7 @@ def format_for_llm_lt(bundle: dict, proposed_action: str) -> str:
         f"Revenue growth (YoY): {_pct(bundle.get('revenue_growth'))}",
         f"Debt-to-equity: {dte:.2f}" if dte is not None else "Debt-to-equity: unavailable",
         f"ROE: {_pct(roe)}",
-        f"Dividend yield: {div:.1f}%" if div else "Dividend yield: unavailable",
+        f"Dividend yield: {div:.1f}%" if div is not None else "Dividend yield: unavailable",
         f"Market cap: {mcap_str}",
         f"Sector: {bundle.get('sector') or 'unavailable'}",
     ]
