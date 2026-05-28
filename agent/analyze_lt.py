@@ -50,16 +50,18 @@ def analyze_lt(bundle: dict, proposed_action: str) -> dict:
 
     msg = client.messages.create(
         model="claude-haiku-4-5-20251001",
-        max_tokens=400,
+        max_tokens=600,
         system=SYSTEM_PROMPT,
         messages=[{"role": "user", "content": signal_text}],
     )
 
     raw = msg.content[0].text.strip()
+    # Strip markdown fences in any form: ```json ... ``` or ``` ... ```
     if raw.startswith("```"):
-        raw = raw.split("```")[1]
-        if raw.startswith("json\n"):
-            raw = raw[5:]
+        raw = raw.lstrip("`")
+        if raw.startswith("json"):
+            raw = raw[4:]
+        raw = raw.strip().rstrip("`").rstrip()
 
     try:
         rec = json.loads(raw)
