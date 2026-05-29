@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-28T12:17:58.280258+05:30",
+  "last_updated": "2026-05-29T12:18:32.238477+05:30",
   "recommendations": {
     "RELIANCE.NS": {
       "action": "HOLD",
@@ -7,9 +7,11 @@
       "ts": "2026-05-12T14:42:21.398763+05:30"
     },
     "TCS.NS": {
-      "action": "HOLD",
-      "confidence": 0.55,
-      "ts": "2026-05-27T12:28:52.782011+05:30"
+      "action": "WATCH",
+      "confidence": 0.72,
+      "proposed_action": "WATCH",
+      "override": false,
+      "ts": "2026-05-29T12:18:32.238477+05:30"
     },
     "INFY.NS": {
       "action": "WATCH",
@@ -32,9 +34,11 @@
       "ts": "2026-05-21T12:17:30.926222+05:30"
     },
     "ITC.NS": {
-      "action": "WATCH",
-      "confidence": 0.62,
-      "ts": "2026-05-28T12:17:58.280258+05:30"
+      "action": "HOLD",
+      "confidence": 0.55,
+      "proposed_action": "BUY",
+      "override": true,
+      "ts": "2026-05-29T12:18:32.238477+05:30"
     },
     "BAJFINANCE.NS": {
       "action": "HOLD",
