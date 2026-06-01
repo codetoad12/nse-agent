@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-29T12:18:32.238477+05:30",
+  "last_updated": "2026-06-01T13:59:08.690291+05:30",
   "recommendations": {
     "RELIANCE.NS": {
       "action": "HOLD",
@@ -11,7 +11,7 @@
       "confidence": 0.72,
       "proposed_action": "WATCH",
       "override": false,
-      "ts": "2026-05-29T12:18:32.238477+05:30"
+      "ts": "2026-06-01T13:59:08.690291+05:30"
     },
     "INFY.NS": {
       "action": "WATCH",
@@ -29,16 +29,18 @@
       "ts": "2026-05-22T12:13:56.986979+05:30"
     },
     "HINDUNILVR.NS": {
-      "action": "HOLD",
-      "confidence": 0.58,
-      "ts": "2026-05-21T12:17:30.926222+05:30"
+      "action": "WATCH",
+      "confidence": 0.3,
+      "proposed_action": "BUY",
+      "override": false,
+      "ts": "2026-06-01T13:59:08.690291+05:30"
     },
     "ITC.NS": {
       "action": "HOLD",
-      "confidence": 0.55,
+      "confidence": 0.58,
       "proposed_action": "BUY",
       "override": true,
-      "ts": "2026-05-29T12:18:32.238477+05:30"
+      "ts": "2026-06-01T13:59:08.690291+05:30"
     },
     "BAJFINANCE.NS": {
       "action": "HOLD",
@@ -46,9 +48,11 @@
       "ts": "2026-05-12T14:42:21.398763+05:30"
     },
     "SBIN.NS": {
-      "action": "BUY",
-      "confidence": 0.72,
-      "ts": "2026-05-28T12:17:58.280258+05:30"
+      "action": "HOLD",
+      "confidence": 0.62,
+      "proposed_action": "WATCH",
+      "override": true,
+      "ts": "2026-06-01T13:59:08.690291+05:30"
     },
     "WIPRO.NS": {
       "action": "HOLD",
@@ -61,9 +65,11 @@
       "ts": "2026-04-28T13:42:53.557068+05:30"
     },
     "KOTAKBANK.NS": {
-      "action": "HOLD",
-      "confidence": 0.62,
-      "ts": "2026-05-15T11:57:52.071042+05:30"
+      "action": "WATCH",
+      "confidence": 0.72,
+      "proposed_action": "WATCH",
+      "override": false,
+      "ts": "2026-06-01T13:59:08.690291+05:30"
     },
     "MARUTI.NS": {
       "action": "BUY",
