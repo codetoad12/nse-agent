@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-01T13:59:08.690291+05:30",
+  "last_updated": "2026-06-02T12:49:45.995716+05:30",
   "recommendations": {
     "RELIANCE.NS": {
       "action": "HOLD",
@@ -11,12 +11,14 @@
       "confidence": 0.72,
       "proposed_action": "WATCH",
       "override": false,
-      "ts": "2026-06-01T13:59:08.690291+05:30"
+      "ts": "2026-06-02T12:49:45.995716+05:30"
     },
     "INFY.NS": {
-      "action": "WATCH",
-      "confidence": 0.58,
-      "ts": "2026-05-19T12:13:21.402597+05:30"
+      "action": "HOLD",
+      "confidence": 0.62,
+      "proposed_action": "SELL",
+      "override": true,
+      "ts": "2026-06-02T12:49:45.995716+05:30"
     },
     "HDFCBANK.NS": {
       "action": "WATCH",
@@ -24,23 +26,25 @@
       "ts": "2026-05-15T14:58:49.227823+05:30"
     },
     "ICICIBANK.NS": {
-      "action": "HOLD",
-      "confidence": 0.58,
-      "ts": "2026-05-22T12:13:56.986979+05:30"
+      "action": "WATCH",
+      "confidence": 0.72,
+      "proposed_action": "WATCH",
+      "override": false,
+      "ts": "2026-06-02T12:49:45.995716+05:30"
     },
     "HINDUNILVR.NS": {
-      "action": "WATCH",
-      "confidence": 0.3,
+      "action": "HOLD",
+      "confidence": 0.55,
       "proposed_action": "BUY",
-      "override": false,
-      "ts": "2026-06-01T13:59:08.690291+05:30"
+      "override": true,
+      "ts": "2026-06-02T12:49:45.995716+05:30"
     },
     "ITC.NS": {
       "action": "HOLD",
-      "confidence": 0.58,
+      "confidence": 0.55,
       "proposed_action": "BUY",
       "override": true,
-      "ts": "2026-06-01T13:59:08.690291+05:30"
+      "ts": "2026-06-02T12:49:45.995716+05:30"
     },
     "BAJFINANCE.NS": {
       "action": "HOLD",
@@ -49,10 +53,10 @@
     },
     "SBIN.NS": {
       "action": "HOLD",
-      "confidence": 0.62,
+      "confidence": 0.72,
       "proposed_action": "WATCH",
       "override": true,
-      "ts": "2026-06-01T13:59:08.690291+05:30"
+      "ts": "2026-06-02T12:49:45.995716+05:30"
     },
     "WIPRO.NS": {
       "action": "HOLD",
