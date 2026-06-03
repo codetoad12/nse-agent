@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-02T12:49:45.995716+05:30",
+  "last_updated": "2026-06-03T13:40:58.487050+05:30",
   "recommendations": {
     "RELIANCE.NS": {
       "action": "HOLD",
@@ -33,18 +33,18 @@
       "ts": "2026-06-02T12:49:45.995716+05:30"
     },
     "HINDUNILVR.NS": {
-      "action": "HOLD",
-      "confidence": 0.55,
-      "proposed_action": "BUY",
-      "override": true,
-      "ts": "2026-06-02T12:49:45.995716+05:30"
+      "action": "WATCH",
+      "confidence": 0.72,
+      "proposed_action": "WATCH",
+      "override": false,
+      "ts": "2026-06-03T13:40:58.487050+05:30"
     },
     "ITC.NS": {
       "action": "HOLD",
       "confidence": 0.55,
       "proposed_action": "BUY",
       "override": true,
-      "ts": "2026-06-02T12:49:45.995716+05:30"
+      "ts": "2026-06-03T13:40:58.487050+05:30"
     },
     "BAJFINANCE.NS": {
       "action": "HOLD",
@@ -52,11 +52,11 @@
       "ts": "2026-05-12T14:42:21.398763+05:30"
     },
     "SBIN.NS": {
-      "action": "HOLD",
-      "confidence": 0.72,
+      "action": "WATCH",
+      "confidence": 0.62,
       "proposed_action": "WATCH",
-      "override": true,
-      "ts": "2026-06-02T12:49:45.995716+05:30"
+      "override": false,
+      "ts": "2026-06-03T13:40:58.487050+05:30"
     },
     "WIPRO.NS": {
       "action": "HOLD",
@@ -64,9 +64,11 @@
       "ts": "2026-05-21T12:17:30.926222+05:30"
     },
     "AXISBANK.NS": {
-      "action": "HOLD",
-      "confidence": 0.55,
-      "ts": "2026-04-28T13:42:53.557068+05:30"
+      "action": "WATCH",
+      "confidence": 0.72,
+      "proposed_action": "WATCH",
+      "override": false,
+      "ts": "2026-06-03T13:40:58.487050+05:30"
     },
     "KOTAKBANK.NS": {
       "action": "WATCH",
@@ -86,9 +88,11 @@
       "ts": "2026-05-13T14:53:59.300797+05:30"
     },
     "ULTRACEMCO.NS": {
-      "action": "HOLD",
-      "confidence": 0.55,
-      "ts": "2026-05-12T14:42:21.398763+05:30"
+      "action": "WATCH",
+      "confidence": 0.72,
+      "proposed_action": "WATCH",
+      "override": false,
+      "ts": "2026-06-03T13:40:58.487050+05:30"
     }
   }
 }
