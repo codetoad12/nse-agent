@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-06-09T12:13:10.106077+05:30",
+  "last_updated": "2026-06-10T12:33:10.785044+05:30",
   "recommendations": {
     "RELIANCE.NS": {
-      "action": "HOLD",
-      "confidence": 0.55,
-      "proposed_action": "BUY",
-      "override": true,
-      "ts": "2026-06-09T12:13:10.106077+05:30"
+      "action": "WATCH",
+      "confidence": 0.72,
+      "proposed_action": "WATCH",
+      "override": false,
+      "ts": "2026-06-10T12:33:10.785044+05:30"
     },
     "TCS.NS": {
       "action": "WATCH",
@@ -29,10 +29,10 @@
     },
     "ICICIBANK.NS": {
       "action": "WATCH",
-      "confidence": 0.3,
+      "confidence": 0.72,
       "proposed_action": "WATCH",
       "override": false,
-      "ts": "2026-06-05T12:32:19.534411+05:30"
+      "ts": "2026-06-10T12:33:10.785044+05:30"
     },
     "HINDUNILVR.NS": {
       "action": "WATCH",
@@ -54,25 +54,25 @@
       "ts": "2026-05-12T14:42:21.398763+05:30"
     },
     "SBIN.NS": {
-      "action": "HOLD",
-      "confidence": 0.62,
+      "action": "WATCH",
+      "confidence": 0.65,
       "proposed_action": "WATCH",
-      "override": true,
-      "ts": "2026-06-09T12:13:10.106077+05:30"
+      "override": false,
+      "ts": "2026-06-10T12:33:10.785044+05:30"
     },
     "WIPRO.NS": {
-      "action": "WATCH",
-      "confidence": 0.3,
-      "proposed_action": "BUY",
-      "override": false,
-      "ts": "2026-06-09T12:13:10.106077+05:30"
+      "action": "BUY",
+      "confidence": 0.72,
+      "proposed_action": "WATCH",
+      "override": true,
+      "ts": "2026-06-10T12:33:10.785044+05:30"
     },
     "AXISBANK.NS": {
       "action": "WATCH",
-      "confidence": 0.72,
+      "confidence": 0.3,
       "proposed_action": "WATCH",
       "override": false,
-      "ts": "2026-06-03T13:40:58.487050+05:30"
+      "ts": "2026-06-10T12:33:10.785044+05:30"
     },
     "KOTAKBANK.NS": {
       "action": "WATCH",
@@ -98,7 +98,7 @@
       "confidence": 0.72,
       "proposed_action": "WATCH",
       "override": false,
-      "ts": "2026-06-09T12:13:10.106077+05:30"
+      "ts": "2026-06-10T12:33:10.785044+05:30"
     }
   }
 }
