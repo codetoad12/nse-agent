@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-17T13:54:28.181328+05:30",
+  "last_updated": "2026-06-18T12:59:41.554261+05:30",
   "recommendations": {
     "RELIANCE.NS": {
       "action": "BUY",
@@ -31,10 +31,10 @@
     },
     "ICICIBANK.NS": {
       "action": "HOLD",
-      "confidence": 0.62,
-      "proposed_action": "SELL",
+      "confidence": 0.72,
+      "proposed_action": "WATCH",
       "override": true,
-      "ts": "2026-06-12T12:47:24.057252+05:30"
+      "ts": "2026-06-18T12:59:41.554261+05:30"
     },
     "HINDUNILVR.NS": {
       "action": "BUY",
@@ -59,10 +59,10 @@
     },
     "SBIN.NS": {
       "action": "WATCH",
-      "confidence": 0.65,
+      "confidence": 0.3,
       "proposed_action": "WATCH",
       "override": false,
-      "ts": "2026-06-15T14:24:25.314056+05:30"
+      "ts": "2026-06-18T12:59:41.554261+05:30"
     },
     "WIPRO.NS": {
       "action": "BUY",
