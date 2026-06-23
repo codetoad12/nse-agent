@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-22T14:22:38.925893+05:30",
+  "last_updated": "2026-06-23T12:13:05.998123+05:30",
   "recommendations": {
     "RELIANCE.NS": {
       "action": "BUY",
@@ -13,14 +13,14 @@
       "confidence": 0.72,
       "proposed_action": "WATCH",
       "override": false,
-      "ts": "2026-06-19T13:57:45.016087+05:30"
+      "ts": "2026-06-23T12:13:05.998123+05:30"
     },
     "INFY.NS": {
-      "action": "WATCH",
-      "confidence": 0.3,
+      "action": "HOLD",
+      "confidence": 0.42,
       "proposed_action": "BUY",
-      "override": false,
-      "ts": "2026-06-19T13:57:45.016087+05:30"
+      "override": true,
+      "ts": "2026-06-23T12:13:05.998123+05:30"
     },
     "HDFCBANK.NS": {
       "action": "WATCH",
@@ -34,7 +34,7 @@
       "confidence": 0.72,
       "proposed_action": "WATCH",
       "override": true,
-      "ts": "2026-06-22T14:22:38.925893+05:30"
+      "ts": "2026-06-23T12:13:05.998123+05:30"
     },
     "HINDUNILVR.NS": {
       "action": "BUY",
@@ -69,7 +69,7 @@
       "confidence": 0.72,
       "proposed_action": "WATCH",
       "override": false,
-      "ts": "2026-06-19T13:57:45.016087+05:30"
+      "ts": "2026-06-23T12:13:05.998123+05:30"
     },
     "AXISBANK.NS": {
       "action": "WATCH",
