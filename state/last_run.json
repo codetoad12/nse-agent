@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-29T12:54:09.491277+05:30",
+  "last_updated": "2026-06-30T12:22:04.816390+05:30",
   "recommendations": {
     "RELIANCE.NS": {
       "action": "BUY",
@@ -13,14 +13,14 @@
       "confidence": 0.72,
       "proposed_action": "WATCH",
       "override": false,
-      "ts": "2026-06-23T12:13:05.998123+05:30"
+      "ts": "2026-06-30T12:22:04.816390+05:30"
     },
     "INFY.NS": {
       "action": "WATCH",
       "confidence": 0.72,
       "proposed_action": "WATCH",
       "override": false,
-      "ts": "2026-06-29T12:54:09.491277+05:30"
+      "ts": "2026-06-30T12:22:04.816390+05:30"
     },
     "HDFCBANK.NS": {
       "action": "WATCH",
@@ -30,18 +30,18 @@
       "ts": "2026-06-12T12:47:24.057252+05:30"
     },
     "ICICIBANK.NS": {
-      "action": "WATCH",
-      "confidence": 0.3,
-      "proposed_action": "WATCH",
-      "override": false,
-      "ts": "2026-06-29T12:54:09.491277+05:30"
-    },
-    "HINDUNILVR.NS": {
-      "action": "BUY",
+      "action": "HOLD",
       "confidence": 0.72,
       "proposed_action": "WATCH",
       "override": true,
-      "ts": "2026-06-12T12:47:24.057252+05:30"
+      "ts": "2026-06-30T12:22:04.816390+05:30"
+    },
+    "HINDUNILVR.NS": {
+      "action": "WATCH",
+      "confidence": 0.72,
+      "proposed_action": "WATCH",
+      "override": false,
+      "ts": "2026-06-30T12:22:04.816390+05:30"
     },
     "ITC.NS": {
       "action": "WATCH",
@@ -51,11 +51,11 @@
       "ts": "2026-06-15T14:24:25.314056+05:30"
     },
     "BAJFINANCE.NS": {
-      "action": "HOLD",
+      "action": "WATCH",
       "confidence": 0.72,
       "proposed_action": "WATCH",
-      "override": true,
-      "ts": "2026-06-29T12:54:09.491277+05:30"
+      "override": false,
+      "ts": "2026-06-30T12:22:04.816390+05:30"
     },
     "SBIN.NS": {
       "action": "HOLD",
@@ -69,7 +69,7 @@
       "confidence": 0.72,
       "proposed_action": "WATCH",
       "override": false,
-      "ts": "2026-06-29T12:54:09.491277+05:30"
+      "ts": "2026-06-30T12:22:04.816390+05:30"
     },
     "AXISBANK.NS": {
       "action": "HOLD",
@@ -90,7 +90,7 @@
       "confidence": 0.3,
       "proposed_action": "WATCH",
       "override": false,
-      "ts": "2026-06-16T14:11:27.268067+05:30"
+      "ts": "2026-06-30T12:22:04.816390+05:30"
     },
     "TITAN.NS": {
       "action": "WATCH",
