@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-10T12:07:07.004758+05:30",
+  "last_updated": "2026-07-13T11:37:41.695205+05:30",
   "recommendations": {
     "RELIANCE.NS": {
       "action": "BUY",
@@ -93,11 +93,11 @@
       "ts": "2026-07-10T12:07:07.004758+05:30"
     },
     "TITAN.NS": {
-      "action": "HOLD",
+      "action": "WATCH",
       "confidence": 0.72,
       "proposed_action": "WATCH",
-      "override": true,
-      "ts": "2026-07-10T12:07:07.004758+05:30"
+      "override": false,
+      "ts": "2026-07-13T11:37:41.695205+05:30"
     },
     "ULTRACEMCO.NS": {
       "action": "BUY",
