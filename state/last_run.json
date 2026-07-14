@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-14T10:53:11.103243+05:30",
+  "last_updated": "2026-07-14T12:53:54.657187+05:30",
   "recommendations": {
     "RELIANCE.NS": {
       "action": "BUY",
@@ -44,18 +44,18 @@
       "ts": "2026-07-01T12:36:19.346080+05:30"
     },
     "ITC.NS": {
-      "action": "WATCH",
-      "confidence": 0.72,
-      "proposed_action": "WATCH",
-      "override": false,
-      "ts": "2026-07-14T10:53:11.103243+05:30"
+      "action": "HOLD",
+      "confidence": 0.55,
+      "proposed_action": "BUY",
+      "override": true,
+      "ts": "2026-07-14T12:53:54.657187+05:30"
     },
     "BAJFINANCE.NS": {
       "action": "WATCH",
       "confidence": 0.72,
       "proposed_action": "WATCH",
       "override": false,
-      "ts": "2026-07-14T10:53:11.103243+05:30"
+      "ts": "2026-07-14T12:53:54.657187+05:30"
     },
     "SBIN.NS": {
       "action": "WATCH",
