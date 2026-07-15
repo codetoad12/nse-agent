@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-14T14:52:29.194609+05:30",
+  "last_updated": "2026-07-15T10:54:19.930535+05:30",
   "recommendations": {
     "RELIANCE.NS": {
       "action": "BUY",
@@ -34,7 +34,7 @@
       "confidence": 0.72,
       "proposed_action": "WATCH",
       "override": false,
-      "ts": "2026-07-09T12:06:52.295012+05:30"
+      "ts": "2026-07-15T10:54:19.930535+05:30"
     },
     "HINDUNILVR.NS": {
       "action": "BUY",
@@ -44,11 +44,11 @@
       "ts": "2026-07-01T12:36:19.346080+05:30"
     },
     "ITC.NS": {
-      "action": "HOLD",
-      "confidence": 0.55,
-      "proposed_action": "BUY",
-      "override": true,
-      "ts": "2026-07-14T14:52:29.194609+05:30"
+      "action": "WATCH",
+      "confidence": 0.72,
+      "proposed_action": "WATCH",
+      "override": false,
+      "ts": "2026-07-15T10:54:19.930535+05:30"
     },
     "BAJFINANCE.NS": {
       "action": "WATCH",
@@ -97,7 +97,7 @@
       "confidence": 0.72,
       "proposed_action": "WATCH",
       "override": false,
-      "ts": "2026-07-13T15:16:15.623231+05:30"
+      "ts": "2026-07-15T10:54:19.930535+05:30"
     },
     "ULTRACEMCO.NS": {
       "action": "BUY",
