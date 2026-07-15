@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-15T12:57:21.869304+05:30",
+  "last_updated": "2026-07-15T14:58:38.988800+05:30",
   "recommendations": {
     "RELIANCE.NS": {
       "action": "BUY",
@@ -45,10 +45,10 @@
     },
     "ITC.NS": {
       "action": "WATCH",
-      "confidence": 0.45,
-      "proposed_action": "BUY",
-      "override": true,
-      "ts": "2026-07-15T12:57:21.869304+05:30"
+      "confidence": 0.72,
+      "proposed_action": "WATCH",
+      "override": false,
+      "ts": "2026-07-15T14:58:38.988800+05:30"
     },
     "BAJFINANCE.NS": {
       "action": "WATCH",
