@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-16T11:03:19.721215+05:30",
+  "last_updated": "2026-07-16T13:17:41.182043+05:30",
   "recommendations": {
     "RELIANCE.NS": {
       "action": "BUY",
@@ -24,10 +24,10 @@
     },
     "HDFCBANK.NS": {
       "action": "WATCH",
-      "confidence": 0.72,
+      "confidence": 0.3,
       "proposed_action": "WATCH",
       "override": false,
-      "ts": "2026-07-16T11:03:19.721215+05:30"
+      "ts": "2026-07-16T13:17:41.182043+05:30"
     },
     "ICICIBANK.NS": {
       "action": "HOLD",
@@ -93,11 +93,11 @@
       "ts": "2026-07-10T12:07:07.004758+05:30"
     },
     "TITAN.NS": {
-      "action": "WATCH",
+      "action": "HOLD",
       "confidence": 0.72,
       "proposed_action": "WATCH",
-      "override": false,
-      "ts": "2026-07-16T11:03:19.721215+05:30"
+      "override": true,
+      "ts": "2026-07-16T13:17:41.182043+05:30"
     },
     "ULTRACEMCO.NS": {
       "action": "BUY",
