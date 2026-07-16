@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-15T14:58:38.988800+05:30",
+  "last_updated": "2026-07-16T11:03:19.721215+05:30",
   "recommendations": {
     "RELIANCE.NS": {
       "action": "BUY",
@@ -27,14 +27,14 @@
       "confidence": 0.72,
       "proposed_action": "WATCH",
       "override": false,
-      "ts": "2026-07-15T12:57:21.869304+05:30"
+      "ts": "2026-07-16T11:03:19.721215+05:30"
     },
     "ICICIBANK.NS": {
-      "action": "WATCH",
+      "action": "HOLD",
       "confidence": 0.72,
       "proposed_action": "WATCH",
-      "override": false,
-      "ts": "2026-07-15T10:54:19.930535+05:30"
+      "override": true,
+      "ts": "2026-07-16T11:03:19.721215+05:30"
     },
     "HINDUNILVR.NS": {
       "action": "WATCH",
@@ -48,7 +48,7 @@
       "confidence": 0.72,
       "proposed_action": "WATCH",
       "override": false,
-      "ts": "2026-07-15T14:58:38.988800+05:30"
+      "ts": "2026-07-16T11:03:19.721215+05:30"
     },
     "BAJFINANCE.NS": {
       "action": "WATCH",
@@ -94,10 +94,10 @@
     },
     "TITAN.NS": {
       "action": "WATCH",
-      "confidence": 0.3,
+      "confidence": 0.72,
       "proposed_action": "WATCH",
       "override": false,
-      "ts": "2026-07-15T12:57:21.869304+05:30"
+      "ts": "2026-07-16T11:03:19.721215+05:30"
     },
     "ULTRACEMCO.NS": {
       "action": "BUY",
