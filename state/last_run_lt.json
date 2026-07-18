@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-11T10:56:08.242940+05:30",
+  "last_updated": "2026-07-18T10:39:04.650060+05:30",
   "recommendations": {
     "RELIANCE.NS": {
       "action": "HOLD",
@@ -7,7 +7,7 @@
       "valuation": "fair",
       "proposed_action": "SELL",
       "override": true,
-      "ts": "2026-07-11T10:56:08.242940+05:30"
+      "ts": "2026-07-18T10:39:04.650060+05:30"
     },
     "TCS.NS": {
       "action": "HOLD",
@@ -15,23 +15,23 @@
       "valuation": "fair",
       "proposed_action": "HOLD",
       "override": false,
-      "ts": "2026-07-11T10:56:08.242940+05:30"
+      "ts": "2026-07-18T10:39:04.650060+05:30"
     },
     "HDFCBANK.NS": {
       "action": "HOLD",
-      "confidence": 0.72,
+      "confidence": 0.45,
       "valuation": "fair",
       "proposed_action": "HOLD",
       "override": false,
-      "ts": "2026-07-11T10:56:08.242940+05:30"
+      "ts": "2026-07-18T10:39:04.650060+05:30"
     },
     "ICICIBANK.NS": {
       "action": "BUY",
-      "confidence": 0.72,
+      "confidence": 0.78,
       "valuation": "fair",
-      "proposed_action": "HOLD",
+      "proposed_action": "WATCH",
       "override": true,
-      "ts": "2026-07-11T10:56:08.242940+05:30"
+      "ts": "2026-07-18T10:39:04.650060+05:30"
     },
     "SBIN.NS": {
       "action": "WATCH",
@@ -39,15 +39,15 @@
       "valuation": "cheap",
       "proposed_action": "WATCH",
       "override": false,
-      "ts": "2026-07-11T10:56:08.242940+05:30"
+      "ts": "2026-07-18T10:39:04.650060+05:30"
     },
     "MARUTI.NS": {
       "action": "HOLD",
-      "confidence": 0.65,
+      "confidence": 0.72,
       "valuation": "expensive",
-      "proposed_action": "SELL",
-      "override": true,
-      "ts": "2026-07-11T10:56:08.242940+05:30"
+      "proposed_action": "HOLD",
+      "override": false,
+      "ts": "2026-07-18T10:39:04.650060+05:30"
     },
     "TITAN.NS": {
       "action": "WATCH",
@@ -55,15 +55,15 @@
       "valuation": "expensive",
       "proposed_action": "WATCH",
       "override": false,
-      "ts": "2026-07-11T10:56:08.242940+05:30"
+      "ts": "2026-07-18T10:39:04.650060+05:30"
     },
     "BAJFINANCE.NS": {
-      "action": "WATCH",
-      "confidence": 0.68,
+      "action": "HOLD",
+      "confidence": 0.65,
       "valuation": "expensive",
       "proposed_action": "WATCH",
-      "override": false,
-      "ts": "2026-07-11T10:56:08.242940+05:30"
+      "override": true,
+      "ts": "2026-07-18T10:39:04.650060+05:30"
     }
   }
 }
