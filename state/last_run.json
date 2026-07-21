@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-20T15:02:24.022171+05:30",
+  "last_updated": "2026-07-21T11:12:45.397710+05:30",
   "recommendations": {
     "RELIANCE.NS": {
       "action": "BUY",
@@ -24,17 +24,17 @@
     },
     "HDFCBANK.NS": {
       "action": "WATCH",
-      "confidence": 0.3,
+      "confidence": 0.72,
       "proposed_action": "WATCH",
       "override": false,
-      "ts": "2026-07-16T13:17:41.182043+05:30"
+      "ts": "2026-07-21T11:12:45.397710+05:30"
     },
     "ICICIBANK.NS": {
       "action": "HOLD",
-      "confidence": 0.65,
+      "confidence": 0.72,
       "proposed_action": "SELL",
       "override": true,
-      "ts": "2026-07-20T15:02:24.022171+05:30"
+      "ts": "2026-07-21T11:12:45.397710+05:30"
     },
     "HINDUNILVR.NS": {
       "action": "WATCH",
@@ -48,14 +48,14 @@
       "confidence": 0.72,
       "proposed_action": "WATCH",
       "override": false,
-      "ts": "2026-07-16T11:03:19.721215+05:30"
+      "ts": "2026-07-21T11:12:45.397710+05:30"
     },
     "BAJFINANCE.NS": {
-      "action": "WATCH",
-      "confidence": 0.72,
-      "proposed_action": "WATCH",
-      "override": false,
-      "ts": "2026-07-20T15:02:24.022171+05:30"
+      "action": "HOLD",
+      "confidence": 0.62,
+      "proposed_action": "SELL",
+      "override": true,
+      "ts": "2026-07-21T11:12:45.397710+05:30"
     },
     "SBIN.NS": {
       "action": "WATCH",
@@ -72,11 +72,11 @@
       "ts": "2026-07-03T15:10:43.627579+05:30"
     },
     "AXISBANK.NS": {
-      "action": "WATCH",
-      "confidence": 0.3,
+      "action": "HOLD",
+      "confidence": 0.45,
       "proposed_action": "BUY",
-      "override": false,
-      "ts": "2026-07-20T15:02:24.022171+05:30"
+      "override": true,
+      "ts": "2026-07-21T11:12:45.397710+05:30"
     },
     "KOTAKBANK.NS": {
       "action": "HOLD",
@@ -94,17 +94,17 @@
     },
     "TITAN.NS": {
       "action": "WATCH",
-      "confidence": 0.72,
+      "confidence": 0.68,
       "proposed_action": "WATCH",
       "override": false,
-      "ts": "2026-07-20T15:02:24.022171+05:30"
+      "ts": "2026-07-21T11:12:45.397710+05:30"
     },
     "ULTRACEMCO.NS": {
       "action": "WATCH",
       "confidence": 0.72,
       "proposed_action": "WATCH",
       "override": false,
-      "ts": "2026-07-20T15:02:24.022171+05:30"
+      "ts": "2026-07-21T11:12:45.397710+05:30"
     }
   }
 }
