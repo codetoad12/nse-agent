@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-22T11:11:51.517137+05:30",
+  "last_updated": "2026-07-22T13:28:05.239451+05:30",
   "recommendations": {
     "RELIANCE.NS": {
       "action": "BUY",
@@ -27,7 +27,7 @@
       "confidence": 0.72,
       "proposed_action": "WATCH",
       "override": false,
-      "ts": "2026-07-22T11:11:51.517137+05:30"
+      "ts": "2026-07-22T13:28:05.239451+05:30"
     },
     "ICICIBANK.NS": {
       "action": "WATCH",
@@ -37,32 +37,32 @@
       "ts": "2026-07-22T11:11:51.517137+05:30"
     },
     "HINDUNILVR.NS": {
-      "action": "BUY",
-      "confidence": 0.68,
+      "action": "WATCH",
+      "confidence": 0.3,
       "proposed_action": "WATCH",
-      "override": true,
-      "ts": "2026-07-22T11:11:51.517137+05:30"
+      "override": false,
+      "ts": "2026-07-22T13:28:05.239451+05:30"
     },
     "ITC.NS": {
       "action": "WATCH",
       "confidence": 0.72,
       "proposed_action": "WATCH",
       "override": false,
-      "ts": "2026-07-22T11:11:51.517137+05:30"
+      "ts": "2026-07-22T13:28:05.239451+05:30"
     },
     "BAJFINANCE.NS": {
       "action": "WATCH",
       "confidence": 0.72,
       "proposed_action": "WATCH",
       "override": false,
-      "ts": "2026-07-22T11:11:51.517137+05:30"
+      "ts": "2026-07-22T13:28:05.239451+05:30"
     },
     "SBIN.NS": {
       "action": "WATCH",
       "confidence": 0.72,
       "proposed_action": "WATCH",
       "override": false,
-      "ts": "2026-07-22T11:11:51.517137+05:30"
+      "ts": "2026-07-22T13:28:05.239451+05:30"
     },
     "WIPRO.NS": {
       "action": "BUY",
@@ -76,7 +76,7 @@
       "confidence": 0.55,
       "proposed_action": "BUY",
       "override": true,
-      "ts": "2026-07-22T11:11:51.517137+05:30"
+      "ts": "2026-07-22T13:28:05.239451+05:30"
     },
     "KOTAKBANK.NS": {
       "action": "HOLD",
@@ -94,10 +94,10 @@
     },
     "TITAN.NS": {
       "action": "HOLD",
-      "confidence": 0.65,
+      "confidence": 0.72,
       "proposed_action": "WATCH",
       "override": true,
-      "ts": "2026-07-22T11:11:51.517137+05:30"
+      "ts": "2026-07-22T13:28:05.239451+05:30"
     },
     "ULTRACEMCO.NS": {
       "action": "WATCH",
