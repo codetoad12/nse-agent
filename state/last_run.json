@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-24T13:28:14.940750+05:30",
+  "last_updated": "2026-07-27T11:50:56.283148+05:30",
   "recommendations": {
     "RELIANCE.NS": {
       "action": "WATCH",
@@ -27,7 +27,7 @@
       "confidence": 0.72,
       "proposed_action": "WATCH",
       "override": false,
-      "ts": "2026-07-24T13:28:14.940750+05:30"
+      "ts": "2026-07-27T11:50:56.283148+05:30"
     },
     "ICICIBANK.NS": {
       "action": "WATCH",
@@ -76,7 +76,7 @@
       "confidence": 0.72,
       "proposed_action": "WATCH",
       "override": false,
-      "ts": "2026-07-24T13:28:14.940750+05:30"
+      "ts": "2026-07-27T11:50:56.283148+05:30"
     },
     "KOTAKBANK.NS": {
       "action": "BUY",
@@ -93,11 +93,11 @@
       "ts": "2026-07-10T12:07:07.004758+05:30"
     },
     "TITAN.NS": {
-      "action": "WATCH",
+      "action": "HOLD",
       "confidence": 0.72,
       "proposed_action": "WATCH",
-      "override": false,
-      "ts": "2026-07-24T13:28:14.940750+05:30"
+      "override": true,
+      "ts": "2026-07-27T11:50:56.283148+05:30"
     },
     "ULTRACEMCO.NS": {
       "action": "WATCH",
