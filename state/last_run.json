@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-28T11:10:28.629204+05:30",
+  "last_updated": "2026-07-28T13:35:05.954436+05:30",
   "recommendations": {
     "RELIANCE.NS": {
       "action": "WATCH",
@@ -10,10 +10,10 @@
     },
     "TCS.NS": {
       "action": "HOLD",
-      "confidence": 0.65,
+      "confidence": 0.68,
       "proposed_action": "SELL",
       "override": true,
-      "ts": "2026-07-28T11:10:28.629204+05:30"
+      "ts": "2026-07-28T13:35:05.954436+05:30"
     },
     "INFY.NS": {
       "action": "WATCH",
@@ -27,7 +27,7 @@
       "confidence": 0.72,
       "proposed_action": "WATCH",
       "override": false,
-      "ts": "2026-07-28T11:10:28.629204+05:30"
+      "ts": "2026-07-28T13:35:05.954436+05:30"
     },
     "ICICIBANK.NS": {
       "action": "WATCH",
@@ -38,10 +38,10 @@
     },
     "HINDUNILVR.NS": {
       "action": "WATCH",
-      "confidence": 0.72,
-      "proposed_action": "WATCH",
+      "confidence": 0.3,
+      "proposed_action": "BUY",
       "override": false,
-      "ts": "2026-07-28T11:10:28.629204+05:30"
+      "ts": "2026-07-28T13:35:05.954436+05:30"
     },
     "ITC.NS": {
       "action": "WATCH",
@@ -66,17 +66,17 @@
     },
     "WIPRO.NS": {
       "action": "WATCH",
-      "confidence": 0.65,
+      "confidence": 0.72,
       "proposed_action": "WATCH",
       "override": false,
-      "ts": "2026-07-28T11:10:28.629204+05:30"
+      "ts": "2026-07-28T13:35:05.954436+05:30"
     },
     "AXISBANK.NS": {
       "action": "WATCH",
       "confidence": 0.72,
       "proposed_action": "WATCH",
       "override": false,
-      "ts": "2026-07-28T11:10:28.629204+05:30"
+      "ts": "2026-07-28T13:35:05.954436+05:30"
     },
     "KOTAKBANK.NS": {
       "action": "BUY",
@@ -93,11 +93,11 @@
       "ts": "2026-07-10T12:07:07.004758+05:30"
     },
     "TITAN.NS": {
-      "action": "HOLD",
-      "confidence": 0.72,
-      "proposed_action": "WATCH",
-      "override": true,
-      "ts": "2026-07-28T11:10:28.629204+05:30"
+      "action": "WATCH",
+      "confidence": 0.3,
+      "proposed_action": "SELL",
+      "override": false,
+      "ts": "2026-07-28T13:35:05.954436+05:30"
     },
     "ULTRACEMCO.NS": {
       "action": "WATCH",
