@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-29T11:14:40.647878+05:30",
+  "last_updated": "2026-07-29T13:41:02.040933+05:30",
   "recommendations": {
     "RELIANCE.NS": {
       "action": "WATCH",
@@ -9,18 +9,18 @@
       "ts": "2026-07-23T13:47:14.550714+05:30"
     },
     "TCS.NS": {
-      "action": "HOLD",
-      "confidence": 0.68,
+      "action": "WATCH",
+      "confidence": 0.3,
       "proposed_action": "SELL",
-      "override": true,
-      "ts": "2026-07-29T11:14:40.647878+05:30"
+      "override": false,
+      "ts": "2026-07-29T13:41:02.040933+05:30"
     },
     "INFY.NS": {
       "action": "WATCH",
       "confidence": 0.72,
       "proposed_action": "WATCH",
       "override": false,
-      "ts": "2026-07-29T11:14:40.647878+05:30"
+      "ts": "2026-07-29T13:41:02.040933+05:30"
     },
     "HDFCBANK.NS": {
       "action": "WATCH",
@@ -69,14 +69,14 @@
       "confidence": 0.72,
       "proposed_action": "WATCH",
       "override": false,
-      "ts": "2026-07-29T11:14:40.647878+05:30"
+      "ts": "2026-07-29T13:41:02.040933+05:30"
     },
     "AXISBANK.NS": {
       "action": "WATCH",
-      "confidence": 0.3,
+      "confidence": 0.72,
       "proposed_action": "WATCH",
       "override": false,
-      "ts": "2026-07-29T11:14:40.647878+05:30"
+      "ts": "2026-07-29T13:41:02.040933+05:30"
     },
     "KOTAKBANK.NS": {
       "action": "BUY",
@@ -97,7 +97,7 @@
       "confidence": 0.3,
       "proposed_action": "SELL",
       "override": false,
-      "ts": "2026-07-29T11:14:40.647878+05:30"
+      "ts": "2026-07-29T13:41:02.040933+05:30"
     },
     "ULTRACEMCO.NS": {
       "action": "WATCH",
