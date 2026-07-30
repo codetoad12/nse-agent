@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-30T11:02:59.048169+05:30",
+  "last_updated": "2026-07-30T13:26:55.660943+05:30",
   "recommendations": {
     "RELIANCE.NS": {
       "action": "WATCH",
@@ -9,18 +9,18 @@
       "ts": "2026-07-23T13:47:14.550714+05:30"
     },
     "TCS.NS": {
-      "action": "WATCH",
-      "confidence": 0.3,
+      "action": "HOLD",
+      "confidence": 0.72,
       "proposed_action": "SELL",
-      "override": false,
-      "ts": "2026-07-30T11:02:59.048169+05:30"
+      "override": true,
+      "ts": "2026-07-30T13:26:55.660943+05:30"
     },
     "INFY.NS": {
-      "action": "WATCH",
-      "confidence": 0.3,
+      "action": "HOLD",
+      "confidence": 0.62,
       "proposed_action": "SELL",
-      "override": false,
-      "ts": "2026-07-30T11:02:59.048169+05:30"
+      "override": true,
+      "ts": "2026-07-30T13:26:55.660943+05:30"
     },
     "HDFCBANK.NS": {
       "action": "WATCH",
@@ -69,14 +69,14 @@
       "confidence": 0.62,
       "proposed_action": "SELL",
       "override": true,
-      "ts": "2026-07-30T11:02:59.048169+05:30"
+      "ts": "2026-07-30T13:26:55.660943+05:30"
     },
     "AXISBANK.NS": {
       "action": "WATCH",
       "confidence": 0.72,
       "proposed_action": "WATCH",
       "override": false,
-      "ts": "2026-07-30T11:02:59.048169+05:30"
+      "ts": "2026-07-30T13:26:55.660943+05:30"
     },
     "KOTAKBANK.NS": {
       "action": "BUY",
@@ -86,18 +86,18 @@
       "ts": "2026-07-24T13:28:14.940750+05:30"
     },
     "MARUTI.NS": {
-      "action": "BUY",
-      "confidence": 0.72,
+      "action": "WATCH",
+      "confidence": 0.3,
       "proposed_action": "WATCH",
-      "override": true,
-      "ts": "2026-07-30T11:02:59.048169+05:30"
+      "override": false,
+      "ts": "2026-07-30T13:26:55.660943+05:30"
     },
     "TITAN.NS": {
-      "action": "HOLD",
-      "confidence": 0.68,
+      "action": "WATCH",
+      "confidence": 0.72,
       "proposed_action": "WATCH",
-      "override": true,
-      "ts": "2026-07-30T11:02:59.048169+05:30"
+      "override": false,
+      "ts": "2026-07-30T13:26:55.660943+05:30"
     },
     "ULTRACEMCO.NS": {
       "action": "WATCH",
