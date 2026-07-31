@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-07-30T13:26:55.660943+05:30",
+  "last_updated": "2026-07-31T11:29:02.115086+05:30",
   "recommendations": {
     "RELIANCE.NS": {
-      "action": "WATCH",
+      "action": "BUY",
       "confidence": 0.72,
       "proposed_action": "WATCH",
-      "override": false,
-      "ts": "2026-07-23T13:47:14.550714+05:30"
+      "override": true,
+      "ts": "2026-07-31T11:29:02.115086+05:30"
     },
     "TCS.NS": {
       "action": "HOLD",
@@ -52,10 +52,10 @@
     },
     "BAJFINANCE.NS": {
       "action": "WATCH",
-      "confidence": 0.72,
-      "proposed_action": "WATCH",
+      "confidence": 0.3,
+      "proposed_action": "SELL",
       "override": false,
-      "ts": "2026-07-24T13:28:14.940750+05:30"
+      "ts": "2026-07-31T11:29:02.115086+05:30"
     },
     "SBIN.NS": {
       "action": "WATCH",
@@ -76,7 +76,7 @@
       "confidence": 0.72,
       "proposed_action": "WATCH",
       "override": false,
-      "ts": "2026-07-30T13:26:55.660943+05:30"
+      "ts": "2026-07-31T11:29:02.115086+05:30"
     },
     "KOTAKBANK.NS": {
       "action": "BUY",
@@ -94,10 +94,10 @@
     },
     "TITAN.NS": {
       "action": "WATCH",
-      "confidence": 0.72,
+      "confidence": 0.3,
       "proposed_action": "WATCH",
       "override": false,
-      "ts": "2026-07-30T13:26:55.660943+05:30"
+      "ts": "2026-07-31T11:29:02.115086+05:30"
     },
     "ULTRACEMCO.NS": {
       "action": "WATCH",
