@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-03T11:43:06.930618+05:30",
+  "last_updated": "2026-08-04T11:11:31.976112+05:30",
   "recommendations": {
     "RELIANCE.NS": {
       "action": "BUY",
@@ -13,7 +13,7 @@
       "confidence": 0.72,
       "proposed_action": "WATCH",
       "override": true,
-      "ts": "2026-08-03T11:43:06.930618+05:30"
+      "ts": "2026-08-04T11:11:31.976112+05:30"
     },
     "INFY.NS": {
       "action": "WATCH",
@@ -51,11 +51,11 @@
       "ts": "2026-07-22T13:28:05.239451+05:30"
     },
     "BAJFINANCE.NS": {
-      "action": "WATCH",
-      "confidence": 0.3,
+      "action": "HOLD",
+      "confidence": 0.65,
       "proposed_action": "SELL",
-      "override": false,
-      "ts": "2026-08-03T11:43:06.930618+05:30"
+      "override": true,
+      "ts": "2026-08-04T11:11:31.976112+05:30"
     },
     "SBIN.NS": {
       "action": "WATCH",
@@ -65,11 +65,11 @@
       "ts": "2026-07-24T11:13:14.161594+05:30"
     },
     "WIPRO.NS": {
-      "action": "HOLD",
-      "confidence": 0.62,
+      "action": "WATCH",
+      "confidence": 0.72,
       "proposed_action": "WATCH",
-      "override": true,
-      "ts": "2026-08-03T11:43:06.930618+05:30"
+      "override": false,
+      "ts": "2026-08-04T11:11:31.976112+05:30"
     },
     "AXISBANK.NS": {
       "action": "HOLD",
@@ -83,7 +83,7 @@
       "confidence": 0.72,
       "proposed_action": "WATCH",
       "override": true,
-      "ts": "2026-07-24T13:28:14.940750+05:30"
+      "ts": "2026-08-04T11:11:31.976112+05:30"
     },
     "MARUTI.NS": {
       "action": "WATCH",
@@ -93,11 +93,11 @@
       "ts": "2026-07-30T13:26:55.660943+05:30"
     },
     "TITAN.NS": {
-      "action": "HOLD",
+      "action": "WATCH",
       "confidence": 0.72,
       "proposed_action": "WATCH",
-      "override": true,
-      "ts": "2026-08-03T11:43:06.930618+05:30"
+      "override": false,
+      "ts": "2026-08-04T11:11:31.976112+05:30"
     },
     "ULTRACEMCO.NS": {
       "action": "WATCH",
