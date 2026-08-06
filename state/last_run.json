@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-06T11:11:05.876154+05:30",
+  "last_updated": "2026-08-06T13:36:01.685747+05:30",
   "recommendations": {
     "RELIANCE.NS": {
       "action": "BUY",
@@ -51,18 +51,18 @@
       "ts": "2026-07-22T13:28:05.239451+05:30"
     },
     "BAJFINANCE.NS": {
-      "action": "HOLD",
-      "confidence": 0.72,
+      "action": "WATCH",
+      "confidence": 0.3,
       "proposed_action": "WATCH",
-      "override": true,
-      "ts": "2026-08-06T11:11:05.876154+05:30"
+      "override": false,
+      "ts": "2026-08-06T13:36:01.685747+05:30"
     },
     "SBIN.NS": {
       "action": "WATCH",
       "confidence": 0.72,
       "proposed_action": "WATCH",
       "override": false,
-      "ts": "2026-07-24T11:13:14.161594+05:30"
+      "ts": "2026-08-06T13:36:01.685747+05:30"
     },
     "WIPRO.NS": {
       "action": "WATCH",
@@ -97,7 +97,7 @@
       "confidence": 0.72,
       "proposed_action": "WATCH",
       "override": false,
-      "ts": "2026-08-06T11:11:05.876154+05:30"
+      "ts": "2026-08-06T13:36:01.685747+05:30"
     },
     "ULTRACEMCO.NS": {
       "action": "WATCH",
