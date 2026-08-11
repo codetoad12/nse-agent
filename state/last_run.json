@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-11T13:16:08.018422+05:30",
+  "last_updated": "2026-08-11T14:16:33.326187+05:30",
   "recommendations": {
     "RELIANCE.NS": {
       "action": "BUY",
@@ -55,7 +55,7 @@
       "confidence": 0.3,
       "proposed_action": "WATCH",
       "override": false,
-      "ts": "2026-08-11T13:16:08.018422+05:30"
+      "ts": "2026-08-11T14:16:33.326187+05:30"
     },
     "SBIN.NS": {
       "action": "WATCH",
@@ -93,18 +93,18 @@
       "ts": "2026-07-30T13:26:55.660943+05:30"
     },
     "TITAN.NS": {
-      "action": "WATCH",
-      "confidence": 0.3,
+      "action": "HOLD",
+      "confidence": 0.62,
       "proposed_action": "SELL",
-      "override": false,
-      "ts": "2026-08-11T13:16:08.018422+05:30"
+      "override": true,
+      "ts": "2026-08-11T14:16:33.326187+05:30"
     },
     "ULTRACEMCO.NS": {
       "action": "WATCH",
       "confidence": 0.72,
       "proposed_action": "WATCH",
       "override": false,
-      "ts": "2026-08-11T13:16:08.018422+05:30"
+      "ts": "2026-08-11T14:16:33.326187+05:30"
     }
   }
 }
