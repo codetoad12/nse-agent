@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-08-21T10:32:26.354335+05:30",
+  "last_updated": "2026-08-21T11:16:21.062177+05:30",
   "recommendations": {
     "RELIANCE.NS": {
       "action": "WATCH",
       "confidence": 0.72,
       "proposed_action": "WATCH",
       "override": false,
-      "ts": "2026-08-21T10:32:26.354335+05:30"
+      "ts": "2026-08-21T11:16:21.062177+05:30"
     },
     "TCS.NS": {
       "action": "WATCH",
@@ -79,11 +79,11 @@
       "ts": "2026-08-18T13:36:25.832448+05:30"
     },
     "KOTAKBANK.NS": {
-      "action": "BUY",
-      "confidence": 0.72,
+      "action": "WATCH",
+      "confidence": 0.3,
       "proposed_action": "WATCH",
-      "override": true,
-      "ts": "2026-08-21T10:32:26.354335+05:30"
+      "override": false,
+      "ts": "2026-08-21T11:16:21.062177+05:30"
     },
     "MARUTI.NS": {
       "action": "WATCH",
