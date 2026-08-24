@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-21T14:59:27.258185+05:30",
+  "last_updated": "2026-08-24T09:17:43.839950+05:30",
   "recommendations": {
     "RELIANCE.NS": {
       "action": "WATCH",
@@ -48,7 +48,7 @@
       "confidence": 0.72,
       "proposed_action": "WATCH",
       "override": false,
-      "ts": "2026-08-21T14:59:27.258185+05:30"
+      "ts": "2026-08-24T09:17:43.839950+05:30"
     },
     "BAJFINANCE.NS": {
       "action": "HOLD",
@@ -83,7 +83,7 @@
       "confidence": 0.72,
       "proposed_action": "WATCH",
       "override": true,
-      "ts": "2026-08-21T14:59:27.258185+05:30"
+      "ts": "2026-08-24T09:17:43.839950+05:30"
     },
     "MARUTI.NS": {
       "action": "WATCH",
@@ -94,10 +94,10 @@
     },
     "TITAN.NS": {
       "action": "WATCH",
-      "confidence": 0.3,
+      "confidence": 0.72,
       "proposed_action": "WATCH",
       "override": false,
-      "ts": "2026-08-21T14:59:27.258185+05:30"
+      "ts": "2026-08-24T09:17:43.839950+05:30"
     },
     "ULTRACEMCO.NS": {
       "action": "WATCH",
