@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-25T13:37:57.307707+05:30",
+  "last_updated": "2026-08-25T14:28:11.062379+05:30",
   "recommendations": {
     "RELIANCE.NS": {
       "action": "WATCH",
@@ -94,10 +94,10 @@
     },
     "TITAN.NS": {
       "action": "WATCH",
-      "confidence": 0.72,
+      "confidence": 0.3,
       "proposed_action": "WATCH",
       "override": false,
-      "ts": "2026-08-25T13:37:57.307707+05:30"
+      "ts": "2026-08-25T14:28:11.062379+05:30"
     },
     "ULTRACEMCO.NS": {
       "action": "WATCH",
