@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-26T10:02:38.244907+05:30",
+  "last_updated": "2026-08-26T10:46:05.218066+05:30",
   "recommendations": {
     "RELIANCE.NS": {
       "action": "WATCH",
@@ -80,10 +80,10 @@
     },
     "KOTAKBANK.NS": {
       "action": "HOLD",
-      "confidence": 0.62,
+      "confidence": 0.72,
       "proposed_action": "SELL",
       "override": true,
-      "ts": "2026-08-26T10:02:38.244907+05:30"
+      "ts": "2026-08-26T10:46:05.218066+05:30"
     },
     "MARUTI.NS": {
       "action": "WATCH",
@@ -93,11 +93,11 @@
       "ts": "2026-08-25T12:59:14.122756+05:30"
     },
     "TITAN.NS": {
-      "action": "HOLD",
+      "action": "WATCH",
       "confidence": 0.72,
       "proposed_action": "WATCH",
-      "override": true,
-      "ts": "2026-08-26T10:02:38.244907+05:30"
+      "override": false,
+      "ts": "2026-08-26T10:46:05.218066+05:30"
     },
     "ULTRACEMCO.NS": {
       "action": "WATCH",
