@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-02T12:59:50.567310+05:30",
+  "last_updated": "2026-09-03T13:13:14.456420+05:30",
   "recommendations": {
     "RELIANCE.NS": {
       "action": "WATCH",
@@ -38,10 +38,10 @@
     },
     "HINDUNILVR.NS": {
       "action": "WATCH",
-      "confidence": 0.3,
-      "proposed_action": "BUY",
+      "confidence": 0.72,
+      "proposed_action": "WATCH",
       "override": false,
-      "ts": "2026-07-28T13:35:05.954436+05:30"
+      "ts": "2026-09-03T13:13:14.456420+05:30"
     },
     "ITC.NS": {
       "action": "WATCH",
@@ -51,11 +51,11 @@
       "ts": "2026-08-31T14:40:03.320346+05:30"
     },
     "BAJFINANCE.NS": {
-      "action": "HOLD",
+      "action": "WATCH",
       "confidence": 0.72,
       "proposed_action": "WATCH",
-      "override": true,
-      "ts": "2026-08-11T15:23:44.721670+05:30"
+      "override": false,
+      "ts": "2026-09-03T13:13:14.456420+05:30"
     },
     "SBIN.NS": {
       "action": "WATCH",
@@ -83,14 +83,14 @@
       "confidence": 0.72,
       "proposed_action": "WATCH",
       "override": true,
-      "ts": "2026-09-02T12:59:50.567310+05:30"
+      "ts": "2026-09-03T13:13:14.456420+05:30"
     },
     "MARUTI.NS": {
       "action": "HOLD",
       "confidence": 0.55,
       "proposed_action": "BUY",
       "override": true,
-      "ts": "2026-09-02T12:59:50.567310+05:30"
+      "ts": "2026-09-03T13:13:14.456420+05:30"
     },
     "TITAN.NS": {
       "action": "WATCH",
