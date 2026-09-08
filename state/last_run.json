@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-09-07T13:15:15.658136+05:30",
+  "last_updated": "2026-09-08T13:09:21.114877+05:30",
   "recommendations": {
     "RELIANCE.NS": {
-      "action": "BUY",
+      "action": "WATCH",
       "confidence": 0.72,
       "proposed_action": "WATCH",
-      "override": true,
-      "ts": "2026-09-04T13:05:24.680368+05:30"
+      "override": false,
+      "ts": "2026-09-08T13:09:21.114877+05:30"
     },
     "TCS.NS": {
       "action": "WATCH",
@@ -48,7 +48,7 @@
       "confidence": 0.72,
       "proposed_action": "WATCH",
       "override": false,
-      "ts": "2026-08-31T14:40:03.320346+05:30"
+      "ts": "2026-09-08T13:09:21.114877+05:30"
     },
     "BAJFINANCE.NS": {
       "action": "WATCH",
@@ -69,7 +69,7 @@
       "confidence": 0.72,
       "proposed_action": "WATCH",
       "override": false,
-      "ts": "2026-09-07T13:15:15.658136+05:30"
+      "ts": "2026-09-08T13:09:21.114877+05:30"
     },
     "AXISBANK.NS": {
       "action": "BUY",
@@ -90,7 +90,7 @@
       "confidence": 0.72,
       "proposed_action": "WATCH",
       "override": false,
-      "ts": "2026-09-07T13:15:15.658136+05:30"
+      "ts": "2026-09-08T13:09:21.114877+05:30"
     },
     "TITAN.NS": {
       "action": "WATCH",
@@ -101,10 +101,10 @@
     },
     "ULTRACEMCO.NS": {
       "action": "WATCH",
-      "confidence": 0.72,
-      "proposed_action": "WATCH",
+      "confidence": 0.3,
+      "proposed_action": "BUY",
       "override": false,
-      "ts": "2026-09-07T13:15:15.658136+05:30"
+      "ts": "2026-09-08T13:09:21.114877+05:30"
     }
   }
 }
