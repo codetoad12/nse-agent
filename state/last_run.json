@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-08T13:09:21.114877+05:30",
+  "last_updated": "2026-09-09T13:14:03.550331+05:30",
   "recommendations": {
     "RELIANCE.NS": {
       "action": "WATCH",
@@ -13,21 +13,21 @@
       "confidence": 0.72,
       "proposed_action": "WATCH",
       "override": false,
-      "ts": "2026-08-12T14:35:08.128960+05:30"
+      "ts": "2026-09-09T13:14:03.550331+05:30"
     },
     "INFY.NS": {
-      "action": "WATCH",
-      "confidence": 0.72,
-      "proposed_action": "WATCH",
-      "override": false,
-      "ts": "2026-09-07T13:15:15.658136+05:30"
+      "action": "HOLD",
+      "confidence": 0.42,
+      "proposed_action": "BUY",
+      "override": true,
+      "ts": "2026-09-09T13:14:03.550331+05:30"
     },
     "HDFCBANK.NS": {
       "action": "WATCH",
       "confidence": 0.3,
-      "proposed_action": "WATCH",
+      "proposed_action": "BUY",
       "override": false,
-      "ts": "2026-09-04T13:05:24.680368+05:30"
+      "ts": "2026-09-09T13:14:03.550331+05:30"
     },
     "ICICIBANK.NS": {
       "action": "WATCH",
@@ -41,7 +41,7 @@
       "confidence": 0.72,
       "proposed_action": "WATCH",
       "override": false,
-      "ts": "2026-09-03T13:13:14.456420+05:30"
+      "ts": "2026-09-09T13:14:03.550331+05:30"
     },
     "ITC.NS": {
       "action": "WATCH",
@@ -65,11 +65,11 @@
       "ts": "2026-09-07T13:15:15.658136+05:30"
     },
     "WIPRO.NS": {
-      "action": "WATCH",
-      "confidence": 0.72,
-      "proposed_action": "WATCH",
-      "override": false,
-      "ts": "2026-09-08T13:09:21.114877+05:30"
+      "action": "HOLD",
+      "confidence": 0.45,
+      "proposed_action": "BUY",
+      "override": true,
+      "ts": "2026-09-09T13:14:03.550331+05:30"
     },
     "AXISBANK.NS": {
       "action": "BUY",
@@ -87,10 +87,10 @@
     },
     "MARUTI.NS": {
       "action": "WATCH",
-      "confidence": 0.72,
+      "confidence": 0.68,
       "proposed_action": "WATCH",
       "override": false,
-      "ts": "2026-09-08T13:09:21.114877+05:30"
+      "ts": "2026-09-09T13:14:03.550331+05:30"
     },
     "TITAN.NS": {
       "action": "WATCH",
@@ -104,7 +104,7 @@
       "confidence": 0.3,
       "proposed_action": "BUY",
       "override": false,
-      "ts": "2026-09-08T13:09:21.114877+05:30"
+      "ts": "2026-09-09T13:14:03.550331+05:30"
     }
   }
 }
