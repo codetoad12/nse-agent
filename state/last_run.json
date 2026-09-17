@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-16T13:39:53.421708+05:30",
+  "last_updated": "2026-09-17T13:46:24.589172+05:30",
   "recommendations": {
     "RELIANCE.NS": {
       "action": "WATCH",
@@ -30,11 +30,11 @@
       "ts": "2026-09-14T13:55:09.342107+05:30"
     },
     "ICICIBANK.NS": {
-      "action": "HOLD",
-      "confidence": 0.55,
-      "proposed_action": "BUY",
-      "override": true,
-      "ts": "2026-09-16T13:39:53.421708+05:30"
+      "action": "WATCH",
+      "confidence": 0.65,
+      "proposed_action": "WATCH",
+      "override": false,
+      "ts": "2026-09-17T13:46:24.589172+05:30"
     },
     "HINDUNILVR.NS": {
       "action": "BUY",
@@ -51,11 +51,11 @@
       "ts": "2026-09-16T13:39:53.421708+05:30"
     },
     "BAJFINANCE.NS": {
-      "action": "WATCH",
-      "confidence": 0.3,
-      "proposed_action": "BUY",
-      "override": false,
-      "ts": "2026-09-16T13:39:53.421708+05:30"
+      "action": "HOLD",
+      "confidence": 0.72,
+      "proposed_action": "WATCH",
+      "override": true,
+      "ts": "2026-09-17T13:46:24.589172+05:30"
     },
     "SBIN.NS": {
       "action": "HOLD",
@@ -90,21 +90,21 @@
       "confidence": 0.72,
       "proposed_action": "WATCH",
       "override": false,
-      "ts": "2026-09-16T13:39:53.421708+05:30"
+      "ts": "2026-09-17T13:46:24.589172+05:30"
     },
     "TITAN.NS": {
-      "action": "WATCH",
-      "confidence": 0.72,
-      "proposed_action": "WATCH",
-      "override": false,
-      "ts": "2026-09-15T13:46:40.156468+05:30"
+      "action": "HOLD",
+      "confidence": 0.55,
+      "proposed_action": "BUY",
+      "override": true,
+      "ts": "2026-09-17T13:46:24.589172+05:30"
     },
     "ULTRACEMCO.NS": {
       "action": "WATCH",
       "confidence": 0.72,
       "proposed_action": "WATCH",
       "override": false,
-      "ts": "2026-09-16T13:39:53.421708+05:30"
+      "ts": "2026-09-17T13:46:24.589172+05:30"
     }
   }
 }
