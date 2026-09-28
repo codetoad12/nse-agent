@@ -1,26 +1,26 @@
 {
-  "last_updated": "2026-09-25T13:55:24.967492+05:30",
+  "last_updated": "2026-09-28T14:43:11.934210+05:30",
   "recommendations": {
     "RELIANCE.NS": {
       "action": "WATCH",
       "confidence": 0.72,
       "proposed_action": "WATCH",
       "override": false,
-      "ts": "2026-09-25T13:55:24.967492+05:30"
+      "ts": "2026-09-28T14:43:11.934210+05:30"
     },
     "TCS.NS": {
       "action": "WATCH",
       "confidence": 0.72,
       "proposed_action": "WATCH",
       "override": false,
-      "ts": "2026-09-25T13:55:24.967492+05:30"
+      "ts": "2026-09-28T14:43:11.934210+05:30"
     },
     "INFY.NS": {
-      "action": "HOLD",
-      "confidence": 0.72,
+      "action": "WATCH",
+      "confidence": 0.65,
       "proposed_action": "WATCH",
-      "override": true,
-      "ts": "2026-09-25T13:55:24.967492+05:30"
+      "override": false,
+      "ts": "2026-09-28T14:43:11.934210+05:30"
     },
     "HDFCBANK.NS": {
       "action": "WATCH",
@@ -30,18 +30,18 @@
       "ts": "2026-09-22T13:37:38.427617+05:30"
     },
     "ICICIBANK.NS": {
-      "action": "WATCH",
-      "confidence": 0.3,
-      "proposed_action": "WATCH",
-      "override": false,
-      "ts": "2026-09-25T13:55:24.967492+05:30"
-    },
-    "HINDUNILVR.NS": {
       "action": "BUY",
       "confidence": 0.72,
       "proposed_action": "WATCH",
       "override": true,
-      "ts": "2026-09-16T13:39:53.421708+05:30"
+      "ts": "2026-09-28T14:43:11.934210+05:30"
+    },
+    "HINDUNILVR.NS": {
+      "action": "HOLD",
+      "confidence": 0.72,
+      "proposed_action": "WATCH",
+      "override": true,
+      "ts": "2026-09-28T14:43:11.934210+05:30"
     },
     "ITC.NS": {
       "action": "WATCH",
@@ -59,17 +59,17 @@
     },
     "SBIN.NS": {
       "action": "HOLD",
-      "confidence": 0.58,
+      "confidence": 0.62,
       "proposed_action": "BUY",
       "override": true,
-      "ts": "2026-09-15T13:46:40.156468+05:30"
+      "ts": "2026-09-28T14:43:11.934210+05:30"
     },
     "WIPRO.NS": {
       "action": "WATCH",
       "confidence": 0.72,
       "proposed_action": "WATCH",
       "override": false,
-      "ts": "2026-09-25T13:55:24.967492+05:30"
+      "ts": "2026-09-28T14:43:11.934210+05:30"
     },
     "AXISBANK.NS": {
       "action": "WATCH",
@@ -79,18 +79,18 @@
       "ts": "2026-09-24T13:31:13.662837+05:30"
     },
     "KOTAKBANK.NS": {
-      "action": "WATCH",
-      "confidence": 0.3,
-      "proposed_action": "WATCH",
-      "override": false,
-      "ts": "2026-09-25T13:55:24.967492+05:30"
-    },
-    "MARUTI.NS": {
-      "action": "WATCH",
+      "action": "HOLD",
       "confidence": 0.72,
       "proposed_action": "WATCH",
+      "override": true,
+      "ts": "2026-09-28T14:43:11.934210+05:30"
+    },
+    "MARUTI.NS": {
+      "action": "BUY",
+      "confidence": 0.72,
+      "proposed_action": "BUY",
       "override": false,
-      "ts": "2026-09-25T13:55:24.967492+05:30"
+      "ts": "2026-09-28T14:43:11.934210+05:30"
     },
     "TITAN.NS": {
       "action": "HOLD",
